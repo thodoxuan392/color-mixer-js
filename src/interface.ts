@@ -1,101 +1,190 @@
 export enum ProtocolId {
-	CONFIG = 0x01,
-	CONFIG_ACK = 0x02,
-	CONFIG_RESULT = 0x03,
-	COMMAND_OPEN_VAN = 0x41,
-	COMMAND_OPEN_VAN_ACK = 0x42,
-	COMMAND_OPEN_VAN_RESULT = 0x43,
-	COMMAND_CANCEL_OPEN_VAN = 0x44,
-	COMMAND_CANCEL_OPEN_VAN_ACK = 0x45,
-	COMMAND_CANCEL_OPEN_VAN_RESULT = 0x46,
-	COMMAND_PLAY_AUDIO = 0x51,
-	COMMAND_PLAY_AUDIO_ACK = 0x52,
-	COMMAND_PLAY_AUDIO_RESULT = 0x53,
-	COMMAND_UPDATE_RFID = 0x61,
-	COMMAND_UPDATE_RFID_ACK = 0x62,
-	COMMAND_UPDATE_RFID_RESULT = 0x63,
-	STATUS = 0x81,
-	RFID_DETECTED = 0xc1,
-  }
-  
-  export enum Result {
-	RESULT_SUCCESS = 0x00,
-	RESULT_FAILED = 0x01,
-	RESULT_RFID_ERROR_NOT_AVAILABLE = 0x70,
-	RESULT_RFID_ERROR_INVALID_FORMAT = 0x71,
-	RESULT_RFID_ERROR_ID_NOT_MATCHED = 0x72,
-	RESULT_RFID_ERROR_AUTHEN_FAILED = 0x73,
-	RESULT_RFID_ERROR_CANNOT_WRITE = 0x74,
-  }
-  
-  export type BaseInterface = {
+	// Generic Command
+	PROTOCOL_ID_CMD_RESET = 0x01,
+	PROTOCOL_ID_CMD_REQUEST_VERSION = 0x02,
+	PROTOCOL_ID_CMD_GET_SETTING = 0x03,
+	PROTOCOL_ID_CMD_UPDATE_SETTING = 0x04,
+	PROTOCOL_ID_CMD_PING = 0x05,
+
+	// Specific Function Command
+	PROTOCOL_ID_CMD_CHANGE_COLOR_VOLUME = 0x10,
+	PROTOCOL_ID_CMD_PUSH_COLOR_COMMAND = 0x11,
+	PROTOCOL_ID_CMD_MIX_COLOR_COMMAND = 0x12,
+	PROTOCOL_ID_CMD_CONTROL_IO = 0x13,
+	PROTOCOL_ID_CMD_CALIBRATION = 0x14,
+	PROTOCOL_ID_CMD_DOOR_CONTROL = 0x15,
+	PROTOCOL_ID_CMD_SET_USAGE_TIME = 0x16,
+	PROTOCOL_ID_CMD_GET_USAGE_TIME = 0x17,
+	PROTOCOL_ID_CMD_MAX,
+
+	// Status
+	PROTOCOL_ID_STS_DEVICE_ERR = 0x30,
+	PROTOCOL_ID_STS_LASER = 0x31,
+	PROTOCOL_ID_STS_MACHINE = 0x32,
+
+	PROTOCOL_ID_MAX,
+}
+
+export enum Result {
+	PROTOCOL_RESULT_SUCCESS = 0x00,
+	PROTOCOL_RESULT_ERROR = 0x01,
+	PROTOCOL_RESULT_COMM_PROTOCOL_ID_INVALID = 0x10,
+	PROTOCOL_RESULT_COMM_PROTOCOL_CRC_INVALID = 0x11,
+	PROTOCOL_RESULT_COMM_PROTOCOL_START_STOP_BYTE_INVALID = 0x12,
+	PROTOCOL_RESULT_COMM_PROTOCOL_DATA_LEN_INVALID = 0x13,
+	PROTOCOL_RESULT_COMM_PROTOCOL_TIMEOUT = 0x14,
+	PROTOCOL_RESULT_CMD_RESET_TIMEOUT = 0x20,
+	PROTOCOL_RESULT_CMD_TRANSFER_OTA_DATA_IN_PROGRESS = 0x21,
+
+	PROTOCOL_RESULT_CMD_SETTING_INVALID = 0x30,
+	PROTOCOL_RESULT_CMD_DEVICE_LOCKED = 0x31,
+}
+
+export type BaseInterface = {
 	protocolId: ProtocolId;
-	machineId: number;
-  };
-  
-  export type BaseResultInterface = BaseInterface & {
+};
+
+export type BaseResultInterface = BaseInterface & {
 	result: Result;
-  };
-  
-  export type Config = BaseInterface & {
-	maxWaterFowAllowed: number;
-  };
-  
-  export type ConfigAck = BaseInterface;
-  
-  export type ConfigResult = BaseResultInterface;
-  
-  export type CommandOpenVan = BaseInterface & {
+};
+export type RequestVersion = BaseInterface;
+export type RequestVersionResult = BaseResultInterface & {
+	serialNumber: string;
+	firmwareVersion: string;
+	boardVersion: string;
+	boardType: number;
+};
+
+export type PipelineSetting = {
+	pulCoefficient: number;
+	pulPer1ms: number;
+	pulPer01ms: number;
+	pulPer001ms: number;
+};
+
+export type Setting = {
+	pipeLineSettings: PipelineSetting[];
+	closeDoorAngle: number;
+	openDoorAngle: number;
+	tOnForPushColor: number;
+	tOnForMixColor: number;
+	mixerSpeedLowLevel: number;
+	mixerSpeedMediumLevel: number;
+	mixerSpeedHighLevel: number;
+	mixerSpeedCurrLevel: number;
+};
+export type GetSetting = BaseInterface;
+export type GetSettingResult = BaseResultInterface & Setting;
+
+export type UpdateSetting = BaseInterface & Setting;
+export type UpdateSettingResult = BaseResultInterface;
+
+export type Ping = BaseInterface;
+export type PingResult = BaseResultInterface;
+
+export type ChangeColorVolume = BaseInterface & {
+	pipeLineId: number;
 	volume: number;
-  };
-  
-  export type CommandOpenVanAck = BaseInterface;
-  
-  export type CommandOpenVanResult = BaseResultInterface;
-  
-  export type CommandCancelOpenVan = BaseInterface;
-  
-  export type CommandCancelOpenVanAck = BaseInterface;
-  
-  export type CommandCancelOpenVanResult = BaseResultInterface;
-  
-  export type CommandPlayAudio = BaseInterface & {
-	audioIndex: number;
-  };
-  
-  export type CommandPlayAudioAck = BaseInterface;
-  
-  export type CommandPlayAudioResult = BaseResultInterface;
-  
-  export type CommandUpdateRFID = BaseInterface & RFID;
-  
-  export type CommandUpdateRFIDAck = BaseInterface;
-  
-  export type CommandUpdateRFIDResult = BaseResultInterface;
-  
-  export type Status = BaseInterface & {
-	placedPositionStatus: boolean;
-	solenoidSensorStatus: boolean;
-	waterFlowSensorStatus: number;
-	rfidPlacedStatus: boolean;
-	error: {
-	  placedPositionError: boolean;
-	  waterFlowSensorError: boolean;
-	  rfidError: boolean;
-	  soundError: boolean;
-	};
-  };
-  
-  export type RFIDDetected = BaseInterface & RFID;
-  
-  export type RFID = {
-	rfidLen: number;
-	rfid: number[];
-	isValid: boolean;
-	volume: number;
-	issueDate: number[];
-  };
-  
-  export const START_BYTE = 0x78;
-  export const STOP_BYTE = 0x79;
-  
+};
+export type ChangeColorVolumeResult = BaseResultInterface;
+
+export enum PushColorCommandEnum {
+	PUSH_COLOR_COMMAND_START = 0x00,
+	PUSH_COLOR_COMMAND_STOP = 0x01,
+	PUSH_COLOR_COMMAND_PAUSE = 0x02,
+	PUSH_COLOR_COMMAND_RESUME = 0x03,
+}
+
+export type PushColor = BaseInterface & {
+	command: PushColorCommandEnum;
+};
+export type PushColorResult = BaseResultInterface & {
+	command: PushColorCommandEnum;
+};
+
+export enum MixColorCommandEnum {
+	MIX_COLOR_COMMAND_START = 0x00,
+	MIX_COLOR_COMMAND_STOP = 0x01,
+	MIX_COLOR_COMMAND_PAUSE = 0x02,
+	MIX_COLOR_COMMAND_RESUME = 0x03,
+}
+export type MixColor = BaseInterface & {
+	command: MixColorCommandEnum;
+};
+export type MixColorResult = BaseResultInterface & {
+	command: MixColorCommandEnum;
+};
+
+export type ControlIO = BaseInterface & {
+	selectedMask: number;
+	levelMask: number;
+};
+
+export enum ControlDoorCommandEnum {
+	CONTROL_DOOR_COMMAND_CLOSE = 0,
+	CONTROL_DOOR_COMMAND_OPEN = 1,
+}
+export type ControlDoor = BaseInterface & {
+	command: ControlDoorCommandEnum;
+};
+export type ControlDoorResult = BaseResultInterface;
+
+export type SetUsageTime = BaseInterface & {
+	usageTime: number;
+};
+export type SetUsageTimeResult = BaseResultInterface;
+
+export type GetUsageTime = BaseInterface;
+export type GetUsageTimeResult = BaseResultInterface & {
+	usageTime: number;
+};
+
+export type DeviceErrStatus = BaseInterface & {
+	pipelineError: boolean[];
+	eepromError: boolean;
+};
+export type InputSts = BaseInterface & {
+	doorClosed: boolean;
+	doorOpened: boolean;
+	canDetected: boolean;
+	reserved: boolean;
+};
+
+export enum MachineStatusEnum {
+	MACHINE_STATUS_NORMAL = 0x00,
+	MACHINE_STATUS_ERROR = 0x01,
+	MACHINE_STATUS_LOCKED = 0x02,
+}
+export type MachineStatus = BaseInterface & {
+	machineStatus: MachineStatusEnum;
+};
+
+export const START_BYTE = 0x78;
+export const STOP_BYTE = 0x79;
+
+export type Request =
+	| RequestVersion
+	| GetSetting
+	| UpdateSetting
+	| Ping
+	| ChangeColorVolume
+	| PushColor
+	| MixColor
+	| ControlDoor
+	| SetUsageTime
+	| GetUsageTime;
+
+export type Response =
+	| RequestVersionResult
+	| GetSettingResult
+	| UpdateSettingResult
+	| PingResult
+	| ChangeColorVolumeResult
+	| PushColorResult
+	| MixColorResult
+	| ControlDoorResult
+	| SetUsageTimeResult
+	| GetUsageTimeResult
+	| DeviceErrStatus
+	| InputSts
+	| MachineStatus;

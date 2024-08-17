@@ -1,0 +1,116 @@
+ [Water-Machine]  24-08-17 21:09:24  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00>[39m
+ [Water-Machine]  24-08-17 21:09:24  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:24  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00>[39m
+ [Water-Machine]  24-08-17 21:09:24  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:25  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 25 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:25  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:25  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 36 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:25  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:26  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 68 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:26  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:26  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 79 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:26  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:27  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00>[39m
+ [Water-Machine]  24-08-17 21:09:27  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:27  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00>[39m
+ [Water-Machine]  24-08-17 21:09:27  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:28  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 25 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:28  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:28  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 36 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:28  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:29  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 68 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:29  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:29  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 79 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:29  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:30  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00>[39m
+ [Water-Machine]  24-08-17 21:09:30  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:30  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00>[39m
+ [Water-Machine]  24-08-17 21:09:30  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:31  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 25 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:31  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:32  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 36 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:32  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:33  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 68 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:33  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:33  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 79 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:33  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:34  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00>[39m
+ [Water-Machine]  24-08-17 21:09:34  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:34  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00>[39m
+ [Water-Machine]  24-08-17 21:09:34  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:35  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 25 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:35  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:35  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 36 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:35  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:36  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 68 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:36  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:36  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 79 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:36  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:37  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00>[39m
+ [Water-Machine]  24-08-17 21:09:37  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:37  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00>[39m
+ [Water-Machine]  24-08-17 21:09:37  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:38  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 25 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:38  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:38  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 36 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:38  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:39  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 68 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:39  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:39  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 79 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:39  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:40  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00>[39m
+ [Water-Machine]  24-08-17 21:09:40  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:40  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00>[39m
+ [Water-Machine]  24-08-17 21:09:40  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:41  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 25 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:41  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:41  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 36 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:41  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:47  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00>[39m
+ [Water-Machine]  24-08-17 21:09:47  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:47  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00>[39m
+ [Water-Machine]  24-08-17 21:09:47  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:48  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 25 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:48  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:48  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 36 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:48  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:49  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 68 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:49  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:49  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 79 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:49  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:50  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00>[39m
+ [Water-Machine]  24-08-17 21:09:50  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:50  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00>[39m
+ [Water-Machine]  24-08-17 21:09:50  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:51  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 25 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:51  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:51  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 36 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:51  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:52  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 68 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:52  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:09:52  [32minfo[39m : [32m<Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ... 79 more bytes>[39m
+ [Water-Machine]  24-08-17 21:09:52  [31merror[39m : [31mStart byte 0 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:10:03  [32minfo[39m : [32m<Buffer 78 30 02 00 00 00 00 79 78 31 01 00 00 00 79 78 32 01 03 30 63 79>[39m
+ [Water-Machine]  24-08-17 21:10:03  [31merror[39m : [31mStart byte 48 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:10:04  [32minfo[39m : [32m<Buffer 78 30 02 00 00 00 00 79 78 31 01 00 00 00 79 78 32 01 03 30 63 79 78 30 02 00 00 00 00 79 78 31 01 00 00 00 79 78 32 01 03 30 63 79>[39m
+ [Water-Machine]  24-08-17 21:10:04  [31merror[39m : [31mStart byte 48 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:10:05  [32minfo[39m : [32m<Buffer 78 30 02 00 00 00 00 79 78 31 01 00 00 00 79 78 32 01 03 30 63 79 78 30 02 00 00 00 00 79 78 31 01 00 00 00 79 78 32 01 03 30 63 79 78 30 02 00 00 00 ... 16 more bytes>[39m
+ [Water-Machine]  24-08-17 21:10:05  [31merror[39m : [31mStart byte 48 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:10:06  [32minfo[39m : [32m<Buffer 78 30 02 00 00 00 00 79 78 31 01 00 00 00 79 78 32 01 03 30 63 79 78 30 02 00 00 00 00 79 78 31 01 00 00 00 79 78 32 01 03 30 63 79 78 30 02 00 00 00 ... 38 more bytes>[39m
+ [Water-Machine]  24-08-17 21:10:06  [31merror[39m : [31mStart byte 48 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:10:07  [32minfo[39m : [32m<Buffer 78 30 02 00 00 00 00 79 78 31 01 00 00 00 79 78 32 01 03 30 63 79 78 30 02 00 00 00 00 79 78 31 01 00 00 00 79 78 32 01 03 30 63 79 78 30 02 00 00 00 ... 60 more bytes>[39m
+ [Water-Machine]  24-08-17 21:10:07  [31merror[39m : [31mStart byte 48 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:10:08  [32minfo[39m : [32m<Buffer 78 30 02 00 00 00 00 79 78 31 01 00 00 00 79 78 32 01 03 30 63 79 78 30 02 00 00 00 00 79 78 31 01 00 00 00 79 78 32 01 03 30 63 79 78 30 02 00 00 00 ... 82 more bytes>[39m
+ [Water-Machine]  24-08-17 21:10:08  [31merror[39m : [31mStart byte 48 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:10:09  [32minfo[39m : [32m<Buffer 78 30 02 00 00 00 00 79 78 31 01 00 00 00 79 78 32 01 03 30 63 79>[39m
+ [Water-Machine]  24-08-17 21:10:09  [31merror[39m : [31mStart byte 48 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:10:10  [32minfo[39m : [32m<Buffer 78 30 02 00 00 00 00 79 78 31 01 00 00 00 79 78 32 01 03 30 63 79 78 30 02 00 00 00 00 79 78 31 01 00 00 00 79 78 32 01 03 30 63 79>[39m
+ [Water-Machine]  24-08-17 21:10:10  [31merror[39m : [31mStart byte 48 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:10:11  [32minfo[39m : [32m<Buffer 78 30 02 00 00 00 00 79 78 31 01 00 00 00 79 78 32 01 03 30 63 79 78 30 02 00 00 00 00 79 78 31 01 00 00 00 79 78 32 01 03 30 63 79 78 30 02 00 00 00 ... 16 more bytes>[39m
+ [Water-Machine]  24-08-17 21:10:11  [31merror[39m : [31mStart byte 48 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:10:12  [32minfo[39m : [32m<Buffer 78 30 02 00 00 00 00 79 78 31 01 00 00 00 79 78 32 01 03 30 63 79 78 30 02 00 00 00 00 79 78 31 01 00 00 00 79 78 32 01 03 30 63 79 78 30 02 00 00 00 ... 38 more bytes>[39m
+ [Water-Machine]  24-08-17 21:10:12  [31merror[39m : [31mStart byte 48 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:10:13  [32minfo[39m : [32m<Buffer 78 30 02 00 00 00 00 79 78 31 01 00 00 00 79 78 32 01 03 30 63 79 78 30 02 00 00 00 00 79 78 31 01 00 00 00 79 78 32 01 03 30 63 79 78 30 02 00 00 00 ... 60 more bytes>[39m
+ [Water-Machine]  24-08-17 21:10:13  [31merror[39m : [31mStart byte 48 is not valid, expected 120[39m
+ [Water-Machine]  24-08-17 21:10:54  [32minfo[39m : [32m<Buffer 78 30 02 00 00 00 00 79 78 31 01 00 00 00 79 78 32 01 03 30 63 79>[39m
+ [Water-Machine]  24-08-17 21:12:22  [32minfo[39m : [32m<Buffer 78 30 02 00 00 00 00 79 78 31 01 00 00 00 79 78 32 01 03 30 63 79>[39m

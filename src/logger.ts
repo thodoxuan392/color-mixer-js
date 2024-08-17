@@ -1,5 +1,5 @@
 import winston = require("winston");
-import 'winston-daily-rotate-file';
+import "winston-daily-rotate-file";
 
 export class Logger {
 	static getLogger(): winston.Logger {
@@ -7,28 +7,28 @@ export class Logger {
 			level: "info",
 			format: winston.format.combine(
 				winston.format.colorize({
-					all:true
+					all: true,
 				}),
 				winston.format.label({
-					label:'[Water-Machine]'
+					label: "[Color-Mixer]",
 				}),
 				winston.format.timestamp({
-					format:"YY-MM-DD HH:mm:ss"
+					format: "YY-MM-DD HH:mm:ss",
 				}),
 				winston.format.printf(
-					info => ` ${info.label}  ${info.timestamp}  ${info.level} : ${info.message}`
+					(info) =>
+						` ${info.label}  ${info.timestamp}  ${info.level} : ${info.message}`
 				)
 			),
 			transports: [
 				new winston.transports.Console(),
 				new winston.transports.DailyRotateFile({
-					filename: 'log/%DATE%.log',
-					datePattern: 'YYYY-MM-DD',
+					filename: "log/%DATE%.log",
+					datePattern: "YYYY-MM-DD",
 					zippedArchive: false,
-					maxSize: '20m',
-					maxFiles: '14d',
-					
-				})
+					maxSize: "20m",
+					maxFiles: "14d",
+				}),
 			],
 		});
 	}
