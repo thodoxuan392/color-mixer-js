@@ -62,3 +62,20 @@ export function floatToByteArray(float: number): Uint8Array {
 	view.setFloat32(0, float, false); // Little-endian byte order
 	return new Uint8Array(buffer);
 }
+
+export function byteArrayToFloat(byteArray: Uint8Array): number {
+	const buffer = new ArrayBuffer(byteArray.length);
+	const view = new DataView(buffer);
+	for (let i = 0; i < byteArray.length; i++) {
+		view.setUint8(i, byteArray[i]);
+	}
+	return view.getFloat32(0, false); // Little-endian byte order
+}
+
+export function generateRandomNumberArray(length: number): number[] {
+	const result: number[] = [];
+	for (let i = 0; i < length; i++) {
+		result.push(Math.floor(Math.random() * 100));
+	}
+	return result;
+}

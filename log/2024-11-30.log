@@ -1,0 +1,426 @@
+ [Color-Mixer]  24-11-30 10:02:11  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 10:02:12  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 10:02:12  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":true,"doorClosed":false,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 10:02:12  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 10:02:13  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 10:02:13  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":true,"doorClosed":false,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 10:02:13  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 10:02:14  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 10:02:14  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":true,"doorClosed":false,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 10:02:14  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 10:02:14  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 10:02:15  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 10:02:15  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":true,"doorClosed":false,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 10:02:15  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 10:02:15  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 10:02:16  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 10:02:16  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":true,"doorClosed":false,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 10:02:16  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 10:02:16  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 10:02:17  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 10:02:17  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":true,"doorClosed":false,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 10:02:17  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 10:02:17  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 10:02:18  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 10:02:18  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":true,"doorClosed":false,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 10:02:18  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 10:02:18  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 10:02:19  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 10:02:19  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":true,"doorClosed":false,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 10:02:19  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 10:02:19  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 10:02:20  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 10:02:20  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":true,"doorClosed":false,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 10:02:20  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 10:02:20  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 10:02:21  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 10:02:21  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":true,"doorClosed":false,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 10:02:21  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 10:02:21  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 10:02:22  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 10:02:22  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":true,"doorClosed":false,"canDetected":false,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 10:02:22  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 10:02:22  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 10:02:23  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 10:02:23  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":true,"doorClosed":false,"canDetected":false,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 10:02:23  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 10:02:23  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 10:02:24  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 10:02:24  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":true,"doorClosed":false,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 10:02:24  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 10:02:24  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 10:02:25  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 10:02:25  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":true,"doorClosed":false,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 10:02:25  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 10:02:25  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 10:02:26  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 10:02:26  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":true,"doorClosed":false,"canDetected":false,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 10:02:26  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 10:02:26  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 10:02:27  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 10:02:27  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":true,"doorClosed":false,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 10:02:27  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 10:02:27  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 10:02:28  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 10:02:28  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":true,"doorClosed":false,"canDetected":false,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 10:02:28  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 10:02:28  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 10:02:29  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 10:02:29  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":true,"doorClosed":false,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 10:02:29  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 10:02:29  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 10:02:30  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 10:02:30  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":true,"doorClosed":false,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 10:02:30  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 10:02:30  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 10:02:31  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 10:02:31  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":true,"doorClosed":false,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 10:02:31  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 10:02:31  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 10:02:32  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 10:02:32  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":true,"doorClosed":false,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 10:02:32  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 10:02:32  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 10:02:33  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 10:02:33  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":true,"doorClosed":false,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 10:02:33  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 10:02:33  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 10:02:34  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 10:02:34  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":true,"doorClosed":false,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 10:02:34  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 10:02:34  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 10:02:35  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 10:02:35  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":true,"doorClosed":false,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 10:02:35  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 10:02:35  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 10:02:36  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 10:02:36  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":true,"doorClosed":false,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 10:02:36  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 10:02:36  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 10:02:37  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 10:02:37  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":true,"doorClosed":false,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 10:02:37  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 10:02:37  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 10:02:38  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 10:02:38  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":true,"doorClosed":false,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 10:02:38  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 10:02:38  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 10:02:39  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 10:02:39  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":true,"doorClosed":false,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 10:02:39  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 10:02:39  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:06:21  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:06:21  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:06:21  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:06:22  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:06:22  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:06:22  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:06:22  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:06:23  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:06:23  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:06:23  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:06:23  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:06:24  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:06:24  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:06:24  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:06:24  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:06:25  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:06:25  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:06:25  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:06:25  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:06:26  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:06:26  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:06:26  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:06:26  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:06:43  [32minfo[39m : [32mExecuting command get-setting ...[39m
+ [Color-Mixer]  24-11-30 11:06:43  [32minfo[39m : [32m[ 120, 3, 0, 0, 0, 121 ][39m
+ [Color-Mixer]  24-11-30 11:06:43  [32minfo[39m : [32mExecuting command got result {"protocolId":3,"result":0,"pipeLineSettings":[{"pulCoefficient":40,"pulPer1ms":260,"pulPer01ms":26,"pulPer001ms":53761,"tOnForPushColor":2600},{"pulCoefficient":4,"pulPer1ms":26,"pulPer01ms":22017,"pulPer001ms":2600,"tOnForPushColor":260},{"pulCoefficient":26,"pulPer1ms":11521,"pulPer01ms":2600,"pulPer001ms":260,"tOnForPushColor":26},{"pulCoefficient":1,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":24065},{"pulCoefficient":40,"pulPer1ms":260,"pulPer01ms":26,"pulPer001ms":8961,"tOnForPushColor":2600},{"pulCoefficient":4,"pulPer1ms":26,"pulPer01ms":32257,"pulPer001ms":2600,"tOnForPushColor":260},{"pulCoefficient":26,"pulPer1ms":59905,"pulPer01ms":2600,"pulPer001ms":260,"tOnForPushColor":26},{"pulCoefficient":1,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":40961},{"pulCoefficient":40,"pulPer1ms":260,"pulPer01ms":26,"pulPer001ms":57345,"tOnForPushColor":2600},{"pulCoefficient":4,"pulPer1ms":26,"pulPer01ms":24065,"pulPer001ms":2600,"tOnForPushColor":260},{"pulCoefficient":26,"pulPer1ms":35073,"pulPer01ms":2600,"pulPer001ms":260,"tOnForPushColor":26},{"pulCoefficient":1,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":50945},{"pulCoefficient":40,"pulPer1ms":260,"pulPer01ms":26,"pulPer001ms":23130,"tOnForPushColor":5},{"pulCoefficient":94,"pulPer1ms":6681,"pulPer01ms":287,"pulPer001ms":41930,"tOnForPushColor":0},{"pulCoefficient":0,"pulPer1ms":0,"pulPer01ms":0,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5}],"closeDoorAngle":26,"openDoorAngle":90,"tOnForMixColor":23040,"mixerSpeedLowLevel":5,"mixerSpeedMediumLevel":94,"mixerSpeedHighLevel":26,"mixerSpeedCurrLevel":25}[39m
+ [Color-Mixer]  24-11-30 11:07:12  [32minfo[39m : [32mExecuting command reset-default-setting ...[39m
+ [Color-Mixer]  24-11-30 11:07:12  [32minfo[39m : [32mExecuting command got result {"protocolId":9,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:07:16  [32minfo[39m : [32mExecuting command get-setting ...[39m
+ [Color-Mixer]  24-11-30 11:07:16  [32minfo[39m : [32m[ 120, 3, 0, 0, 0, 121 ][39m
+ [Color-Mixer]  24-11-30 11:07:19  [32minfo[39m : [32mExecuting command get-setting ...[39m
+ [Color-Mixer]  24-11-30 11:07:19  [32minfo[39m : [32m[ 120, 3, 0, 0, 0, 121 ][39m
+ [Color-Mixer]  24-11-30 11:07:19  [32minfo[39m : [32mExecuting command got result {"protocolId":3,"result":0,"pipeLineSettings":[{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5}],"closeDoorAngle":4,"openDoorAngle":0,"tOnForMixColor":6656,"mixerSpeedLowLevel":5,"mixerSpeedMediumLevel":8,"mixerSpeedHighLevel":10,"mixerSpeedCurrLevel":40}[39m
+ [Color-Mixer]  24-11-30 11:07:19  [32minfo[39m : [32mExecuting command got result {"protocolId":3,"result":0,"pipeLineSettings":[{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5}],"closeDoorAngle":4,"openDoorAngle":0,"tOnForMixColor":6656,"mixerSpeedLowLevel":5,"mixerSpeedMediumLevel":8,"mixerSpeedHighLevel":10,"mixerSpeedCurrLevel":40}[39m
+ [Color-Mixer]  24-11-30 11:07:37  [32minfo[39m : [32mExecuting command update-setting ...[39m
+ [Color-Mixer]  24-11-30 11:07:43  [32minfo[39m : [32mExecuting command update-setting ...[39m
+ [Color-Mixer]  24-11-30 11:07:47  [32minfo[39m : [32mExecuting command get-setting ...[39m
+ [Color-Mixer]  24-11-30 11:07:47  [32minfo[39m : [32m[ 120, 3, 0, 0, 0, 121 ][39m
+ [Color-Mixer]  24-11-30 11:07:49  [32minfo[39m : [32mExecuting command get-setting ...[39m
+ [Color-Mixer]  24-11-30 11:07:49  [32minfo[39m : [32m[ 120, 3, 0, 0, 0, 121 ][39m
+ [Color-Mixer]  24-11-30 11:07:50  [32minfo[39m : [32mExecuting command get-setting ...[39m
+ [Color-Mixer]  24-11-30 11:07:50  [32minfo[39m : [32m[ 120, 3, 0, 0, 0, 121 ][39m
+ [Color-Mixer]  24-11-30 11:07:52  [32minfo[39m : [32mExecuting command get-setting ...[39m
+ [Color-Mixer]  24-11-30 11:07:52  [32minfo[39m : [32m[ 120, 3, 0, 0, 0, 121 ][39m
+ [Color-Mixer]  24-11-30 11:07:52  [31merror[39m : [31mProtocol Id undefined is not valid[39m
+ [Color-Mixer]  24-11-30 11:07:53  [32minfo[39m : [32mExecuting command get-setting ...[39m
+ [Color-Mixer]  24-11-30 11:07:53  [32minfo[39m : [32m[ 120, 3, 0, 0, 0, 121 ][39m
+ [Color-Mixer]  24-11-30 11:07:53  [31merror[39m : [31mProtocol Id undefined is not valid[39m
+ [Color-Mixer]  24-11-30 11:07:59  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:07:59  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:07:59  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:07:59  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:08:00  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:08:00  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:08:00  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:08:00  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:08:01  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:08:01  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:08:01  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:08:01  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:08:02  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:08:02  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:08:02  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:08:02  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:08:02  [32minfo[39m : [32mExecuting command get-setting ...[39m
+ [Color-Mixer]  24-11-30 11:08:02  [32minfo[39m : [32m[ 120, 3, 0, 0, 0, 121 ][39m
+ [Color-Mixer]  24-11-30 11:08:03  [32minfo[39m : [32mDevice response {"protocolId":3,"result":0,"pipeLineSettings":[{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5}],"closeDoorAngle":4,"openDoorAngle":0,"tOnForMixColor":6656,"mixerSpeedLowLevel":5,"mixerSpeedMediumLevel":8,"mixerSpeedHighLevel":10,"mixerSpeedCurrLevel":40}[39m
+ [Color-Mixer]  24-11-30 11:08:03  [31merror[39m : [31mProtocol Id undefined is not valid[39m
+ [Color-Mixer]  24-11-30 11:08:03  [32minfo[39m : [32mExecuting command got result {"protocolId":3,"result":0,"pipeLineSettings":[{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5}],"closeDoorAngle":4,"openDoorAngle":0,"tOnForMixColor":6656,"mixerSpeedLowLevel":5,"mixerSpeedMediumLevel":8,"mixerSpeedHighLevel":10,"mixerSpeedCurrLevel":40}[39m
+ [Color-Mixer]  24-11-30 11:08:03  [32minfo[39m : [32mExecuting command got result {"protocolId":3,"result":0,"pipeLineSettings":[{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5}],"closeDoorAngle":4,"openDoorAngle":0,"tOnForMixColor":6656,"mixerSpeedLowLevel":5,"mixerSpeedMediumLevel":8,"mixerSpeedHighLevel":10,"mixerSpeedCurrLevel":40}[39m
+ [Color-Mixer]  24-11-30 11:08:03  [32minfo[39m : [32mExecuting command got result {"protocolId":3,"result":0,"pipeLineSettings":[{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5}],"closeDoorAngle":4,"openDoorAngle":0,"tOnForMixColor":6656,"mixerSpeedLowLevel":5,"mixerSpeedMediumLevel":8,"mixerSpeedHighLevel":10,"mixerSpeedCurrLevel":40}[39m
+ [Color-Mixer]  24-11-30 11:08:03  [32minfo[39m : [32mExecuting command got result {"protocolId":3,"result":0,"pipeLineSettings":[{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5}],"closeDoorAngle":4,"openDoorAngle":0,"tOnForMixColor":6656,"mixerSpeedLowLevel":5,"mixerSpeedMediumLevel":8,"mixerSpeedHighLevel":10,"mixerSpeedCurrLevel":40}[39m
+ [Color-Mixer]  24-11-30 11:08:03  [32minfo[39m : [32mExecuting command got result {"protocolId":3,"result":0,"pipeLineSettings":[{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5}],"closeDoorAngle":4,"openDoorAngle":0,"tOnForMixColor":6656,"mixerSpeedLowLevel":5,"mixerSpeedMediumLevel":8,"mixerSpeedHighLevel":10,"mixerSpeedCurrLevel":40}[39m
+ [Color-Mixer]  24-11-30 11:08:03  [32minfo[39m : [32mExecuting command got result {"protocolId":3,"result":0,"pipeLineSettings":[{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5}],"closeDoorAngle":4,"openDoorAngle":0,"tOnForMixColor":6656,"mixerSpeedLowLevel":5,"mixerSpeedMediumLevel":8,"mixerSpeedHighLevel":10,"mixerSpeedCurrLevel":40}[39m
+ [Color-Mixer]  24-11-30 11:08:03  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:08:03  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:08:03  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:08:03  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:08:03  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:08:03  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:08:03  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:08:03  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:08:04  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:08:04  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:08:04  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:08:04  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:08:05  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:08:05  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:08:05  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:08:05  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:08:06  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:08:07  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:08:07  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:08:07  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:08:07  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:08:08  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:08:08  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:08:08  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:08:08  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:08:09  [32minfo[39m : [32mExecuting command get-setting ...[39m
+ [Color-Mixer]  24-11-30 11:08:09  [32minfo[39m : [32m[ 120, 3, 0, 0, 0, 121 ][39m
+ [Color-Mixer]  24-11-30 11:08:12  [32minfo[39m : [32mExecuting command get-setting ...[39m
+ [Color-Mixer]  24-11-30 11:08:12  [32minfo[39m : [32m[ 120, 3, 0, 0, 0, 121 ][39m
+ [Color-Mixer]  24-11-30 11:08:12  [31merror[39m : [31mProtocol Id undefined is not valid[39m
+ [Color-Mixer]  24-11-30 11:08:13  [32minfo[39m : [32mExecuting command get-setting ...[39m
+ [Color-Mixer]  24-11-30 11:08:13  [32minfo[39m : [32m[ 120, 3, 0, 0, 0, 121 ][39m
+ [Color-Mixer]  24-11-30 11:08:15  [32minfo[39m : [32mExecuting command get-setting ...[39m
+ [Color-Mixer]  24-11-30 11:08:15  [32minfo[39m : [32m[ 120, 3, 0, 0, 0, 121 ][39m
+ [Color-Mixer]  24-11-30 11:08:20  [32minfo[39m : [32mExecuting command get-setting ...[39m
+ [Color-Mixer]  24-11-30 11:08:20  [32minfo[39m : [32m[ 120, 3, 0, 0, 0, 121 ][39m
+ [Color-Mixer]  24-11-30 11:08:27  [32minfo[39m : [32mExecuting command get-setting ...[39m
+ [Color-Mixer]  24-11-30 11:08:27  [32minfo[39m : [32m[ 120, 3, 0, 0, 0, 121 ][39m
+ [Color-Mixer]  24-11-30 11:08:27  [31merror[39m : [31mProtocol Id undefined is not valid[39m
+ [Color-Mixer]  24-11-30 11:08:56  [32minfo[39m : [32mExecuting command get-setting ...[39m
+ [Color-Mixer]  24-11-30 11:08:56  [32minfo[39m : [32m[ 120, 3, 0, 0, 0, 121 ][39m
+ [Color-Mixer]  24-11-30 11:08:57  [32minfo[39m : [32mExecuting command got result {"protocolId":3,"result":0,"pipeLineSettings":[{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5}],"closeDoorAngle":4,"openDoorAngle":0,"tOnForMixColor":6656,"mixerSpeedLowLevel":5,"mixerSpeedMediumLevel":8,"mixerSpeedHighLevel":10,"mixerSpeedCurrLevel":40}[39m
+ [Color-Mixer]  24-11-30 11:09:04  [32minfo[39m : [32mExecuting command update-setting ...[39m
+ [Color-Mixer]  24-11-30 11:09:28  [32minfo[39m : [32mExecuting command update-setting ...[39m
+ [Color-Mixer]  24-11-30 11:10:21  [32minfo[39m : [32mExecuting command update-setting ...[39m
+ [Color-Mixer]  24-11-30 11:10:27  [32minfo[39m : [32mExecuting command update-setting ...[39m
+ [Color-Mixer]  24-11-30 11:12:48  [32minfo[39m : [32mExecuting command update-setting ...[39m
+ [Color-Mixer]  24-11-30 11:13:02  [32minfo[39m : [32mExecuting command update-setting ...[39m
+ [Color-Mixer]  24-11-30 11:13:55  [32minfo[39m : [32mExecuting command update-setting ...[39m
+ [Color-Mixer]  24-11-30 11:14:02  [31merror[39m : [31mCheck sum is not valid 30840 is not valid, expected 0[39m
+ [Color-Mixer]  24-11-30 11:14:07  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:07  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:08  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:08  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:09  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:09  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:10  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:10  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:11  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:11  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:12  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:12  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:13  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:13  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:14  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:14  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:15  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:15  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:16  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:16  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:17  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:17  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:18  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:19  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:19  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:20  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:20  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:21  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:21  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:22  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:23  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:23  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:24  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:24  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:25  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:25  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:26  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:26  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:27  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:27  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:28  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:28  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:29  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:30  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:30  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:31  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:31  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:32  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:32  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:33  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:33  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:34  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:34  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:35  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:35  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:36  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:36  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:37  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:37  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:38  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:38  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:14:39  [31merror[39m : [31mCheck sum is not valid 0 is not valid, expected 63458[39m
+ [Color-Mixer]  24-11-30 11:15:03  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:15:03  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:15:03  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:15:03  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:15:04  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:15:04  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:15:04  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:15:04  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:15:05  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:15:05  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:15:05  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:15:05  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:15:06  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:15:06  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:15:06  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:15:06  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:15:07  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:15:07  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:15:07  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:15:07  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:15:08  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:15:08  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:15:08  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:15:08  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:15:09  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:15:09  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:15:09  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:15:09  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:15:10  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:15:10  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:15:10  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:15:10  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:15:11  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:15:12  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:15:12  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:15:12  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:15:12  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:15:13  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:15:13  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:15:13  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:15:13  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:15:14  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:15:14  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:15:14  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:15:14  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:15:15  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:15:15  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:15:15  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:15:15  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:15:16  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:15:16  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:15:16  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:15:16  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:15:17  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:15:17  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:15:17  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:15:17  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:15:18  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:15:18  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:15:18  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:15:18  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:15:19  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:15:19  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:15:19  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:15:19  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:15:20  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:15:20  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:15:20  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:15:20  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:15:21  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:15:21  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:15:21  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:15:21  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:15:22  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:15:22  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:15:22  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:15:22  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:15:23  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:15:23  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:15:23  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:15:23  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:15:24  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:15:24  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:15:24  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:15:24  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:15:25  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:15:25  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:15:25  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:15:25  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:15:26  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:15:26  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:15:26  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:15:26  [32minfo[39m : [32mDevice response {"protocolId":5,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:15:27  [32minfo[39m : [32mDevice response {"protocolId":48,"eepromError":false,"pipelineError":[false]}[39m
+ [Color-Mixer]  24-11-30 11:15:27  [32minfo[39m : [32mDevice response {"protocolId":49,"doorOpened":false,"doorClosed":true,"canDetected":true,"reserved":false}[39m
+ [Color-Mixer]  24-11-30 11:15:27  [32minfo[39m : [32mDevice response {"protocolId":50,"machineStatus":0}[39m
+ [Color-Mixer]  24-11-30 11:15:32  [32minfo[39m : [32mExecuting command update-setting ...[39m
+ [Color-Mixer]  24-11-30 11:16:10  [32minfo[39m : [32mExecuting command update-setting ...[39m
+ [Color-Mixer]  24-11-30 11:17:31  [32minfo[39m : [32mExecuting command update-setting ...[39m
+ [Color-Mixer]  24-11-30 11:17:42  [32minfo[39m : [32mExecuting command got result {"protocolId":4,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:17:46  [32minfo[39m : [32mExecuting command get-setting ...[39m
+ [Color-Mixer]  24-11-30 11:17:46  [32minfo[39m : [32m[ 120, 3, 0, 0, 0, 121 ][39m
+ [Color-Mixer]  24-11-30 11:17:46  [31merror[39m : [31mProtocol Id undefined is not valid[39m
+ [Color-Mixer]  24-11-30 11:17:46  [32minfo[39m : [32mExecuting command got result {"protocolId":3,"result":0,"pipeLineSettings":[{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":36964,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":144},{"pulCoefficient":1,"pulPer1ms":356,"pulPer01ms":36874,"pulPer001ms":1,"tOnForPushColor":144},{"pulCoefficient":1,"pulPer1ms":2660,"pulPer01ms":266,"pulPer001ms":36865,"tOnForPushColor":144},{"pulCoefficient":1,"pulPer1ms":25700,"pulPer01ms":2570,"pulPer001ms":257,"tOnForPushColor":37008},{"pulCoefficient":1,"pulPer1ms":356,"pulPer01ms":25610,"pulPer001ms":2561,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":356,"pulPer01ms":266,"pulPer001ms":25601,"tOnForPushColor":2704},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":266,"pulPer001ms":257,"tOnForPushColor":25744},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":257,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":36964,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":144},{"pulCoefficient":1,"pulPer1ms":356,"pulPer01ms":36874,"pulPer001ms":1,"tOnForPushColor":144},{"pulCoefficient":1,"pulPer1ms":2660,"pulPer01ms":266,"pulPer001ms":36865,"tOnForPushColor":144},{"pulCoefficient":1,"pulPer1ms":25700,"pulPer01ms":2570,"pulPer001ms":257,"tOnForPushColor":37008},{"pulCoefficient":1,"pulPer1ms":356,"pulPer01ms":25610,"pulPer001ms":2561,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":356,"pulPer01ms":266,"pulPer001ms":25601,"tOnForPushColor":2704}],"closeDoorAngle":10,"openDoorAngle":144,"tOnForMixColor":256,"mixerSpeedLowLevel":144,"mixerSpeedMediumLevel":1,"mixerSpeedHighLevel":100,"mixerSpeedCurrLevel":100}[39m
+ [Color-Mixer]  24-11-30 11:18:59  [31merror[39m : [31mCheck sum is not valid 1285 is not valid, expected 0[39m
+ [Color-Mixer]  24-11-30 11:19:01  [32minfo[39m : [32mExecuting command update-setting ...[39m
+ [Color-Mixer]  24-11-30 11:19:30  [32minfo[39m : [32mExecuting command got result {"protocolId":4,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:19:42  [32minfo[39m : [32mExecuting command update-setting ...[39m
+ [Color-Mixer]  24-11-30 11:19:47  [32minfo[39m : [32mExecuting command got result {"protocolId":4,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:19:49  [32minfo[39m : [32mExecuting command get-setting ...[39m
+ [Color-Mixer]  24-11-30 11:19:49  [32minfo[39m : [32m[ 120, 3, 0, 0, 0, 121 ][39m
+ [Color-Mixer]  24-11-30 11:19:49  [32minfo[39m : [32mExecuting command got result {"protocolId":3,"result":0,"pipeLineSettings":[{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400}],"closeDoorAngle":10,"openDoorAngle":0,"tOnForMixColor":257,"mixerSpeedLowLevel":144,"mixerSpeedMediumLevel":1,"mixerSpeedHighLevel":0,"mixerSpeedCurrLevel":100}[39m
+ [Color-Mixer]  24-11-30 11:21:32  [32minfo[39m : [32mExecuting command update-setting ...[39m
+ [Color-Mixer]  24-11-30 11:22:02  [32minfo[39m : [32mExecuting command got result {"protocolId":4,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:22:06  [32minfo[39m : [32mExecuting command get-setting ...[39m
+ [Color-Mixer]  24-11-30 11:22:06  [32minfo[39m : [32m[ 120, 3, 0, 0, 0, 121 ][39m
+ [Color-Mixer]  24-11-30 11:22:06  [32minfo[39m : [32mExecuting command got result {"protocolId":3,"result":0,"pipeLineSettings":[{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400}],"closeDoorAngle":10,"openDoorAngle":0,"tOnForMixColor":257,"mixerSpeedLowLevel":144,"mixerSpeedMediumLevel":1,"mixerSpeedHighLevel":0,"mixerSpeedCurrLevel":100}[39m
+ [Color-Mixer]  24-11-30 11:24:00  [32minfo[39m : [32mExecuting command get-setting ...[39m
+ [Color-Mixer]  24-11-30 11:24:00  [32minfo[39m : [32m[ 120, 3, 0, 0, 0, 121 ][39m
+ [Color-Mixer]  24-11-30 11:24:00  [32minfo[39m : [32mExecuting command got result {"protocolId":3,"result":0,"pipeLineSettings":[{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400},{"pulCoefficient":1,"pulPer1ms":100,"pulPer01ms":10,"pulPer001ms":1,"tOnForPushColor":400}],"closeDoorAngle":50,"openDoorAngle":50,"tOnForMixColor":1000,"mixerSpeedLowLevel":60,"mixerSpeedMediumLevel":80,"mixerSpeedHighLevel":100,"mixerSpeedCurrLevel":2}[39m
+ [Color-Mixer]  24-11-30 11:59:19  [32minfo[39m : [32mExecuting command reset-default-setting ...[39m
+ [Color-Mixer]  24-11-30 11:59:23  [32minfo[39m : [32mExecuting command got result {"protocolId":9,"result":0}[39m
+ [Color-Mixer]  24-11-30 11:59:28  [32minfo[39m : [32mExecuting command get-setting ...[39m
+ [Color-Mixer]  24-11-30 11:59:28  [32minfo[39m : [32m[ 120, 3, 0, 0, 0, 121 ][39m
+ [Color-Mixer]  24-11-30 11:59:29  [32minfo[39m : [32mExecuting command got result {"protocolId":3,"result":0,"pipeLineSettings":[{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5},{"pulCoefficient":8,"pulPer1ms":2600,"pulPer01ms":260,"pulPer001ms":26,"tOnForPushColor":5}],"closeDoorAngle":90,"openDoorAngle":90,"tOnForMixColor":350,"mixerSpeedLowLevel":25,"mixerSpeedMediumLevel":26,"mixerSpeedHighLevel":31,"mixerSpeedCurrLevel":1}[39m
+ [Color-Mixer]  24-11-30 12:08:49  [32minfo[39m : [32mExecuting command reset-default-setting ...[39m
+ [Color-Mixer]  24-11-30 12:08:50  [32minfo[39m : [32mExecuting command got result {"protocolId":9,"result":0}[39m
+ [Color-Mixer]  24-11-30 12:12:26  [32minfo[39m : [32mExecuting command reset-default-setting ...[39m
+ [Color-Mixer]  24-11-30 12:12:27  [32minfo[39m : [32mExecuting command got result {"protocolId":9,"result":0}[39m

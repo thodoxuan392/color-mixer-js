@@ -5,6 +5,10 @@ export enum ProtocolId {
 	PROTOCOL_ID_CMD_GET_SETTING = 0x03,
 	PROTOCOL_ID_CMD_UPDATE_SETTING = 0x04,
 	PROTOCOL_ID_CMD_PING = 0x05,
+	PROTOCOL_ID_CMD_UPDATE_SERIAL_NUMBER = 0x06,
+	PROTOCOL_ID_CMD_SYNC_TIME = 0x07,
+	PROTOCOL_ID_CMD_GET_REAL_TIME = 0x08,
+	PROTOCOL_ID_CMD_RESET_DEFAULT_SETTING = 0x09,
 
 	// Specific Function Command
 	PROTOCOL_ID_CMD_CHANGE_COLOR_VOLUME = 0x10,
@@ -13,14 +17,16 @@ export enum ProtocolId {
 	PROTOCOL_ID_CMD_CONTROL_IO = 0x13,
 	PROTOCOL_ID_CMD_CALIBRATION = 0x14,
 	PROTOCOL_ID_CMD_DOOR_CONTROL = 0x15,
-	PROTOCOL_ID_CMD_SET_USAGE_TIME = 0x16,
-	PROTOCOL_ID_CMD_GET_USAGE_TIME = 0x17,
+	PROTOCOL_ID_CMD_SET_EXPIRE_TIME = 0x16,
+	PROTOCOL_ID_CMD_GET_EXPIRE_TIME = 0x17,
+	PROTOCOL_ID_CMD_PUSH_COLOR_COMMAND_W_DIRECTION = 0x19,
 	PROTOCOL_ID_CMD_MAX,
 
 	// Status
 	PROTOCOL_ID_STS_DEVICE_ERR = 0x30,
 	PROTOCOL_ID_STS_LASER = 0x31,
 	PROTOCOL_ID_STS_MACHINE = 0x32,
+	PROTOCOL_ID_STS_PIPELINE = 0x33,
 
 	PROTOCOL_ID_MAX,
 }
@@ -60,13 +66,13 @@ export type PipelineSetting = {
 	pulPer1ms: number;
 	pulPer01ms: number;
 	pulPer001ms: number;
+	tOnForPushColor: number;
 };
 
 export type Setting = {
 	pipeLineSettings: PipelineSetting[];
 	closeDoorAngle: number;
 	openDoorAngle: number;
-	tOnForPushColor: number;
 	tOnForMixColor: number;
 	mixerSpeedLowLevel: number;
 	mixerSpeedMediumLevel: number;
@@ -81,6 +87,24 @@ export type UpdateSettingResult = BaseResultInterface;
 
 export type Ping = BaseInterface;
 export type PingResult = BaseResultInterface;
+
+export type UpdateSerialNumber = BaseInterface & {
+	serialNumber: number[];
+};
+export type UpdateSerialNumberResult = BaseResultInterface;
+
+export type SyncTime = BaseInterface & {
+	time: CustomDateTime;
+};
+export type SyncTimeResult = BaseResultInterface;
+
+export type GetRealTime = BaseInterface;
+export type GetRealTimeResult = BaseResultInterface & {
+	time: CustomDateTime;
+};
+
+export type ResetDefaultSetting = BaseInterface;
+export type ResetDefaultSettingResult = BaseResultInterface;
 
 export type ChangeColorVolume = BaseInterface & {
 	pipeLineId: number;
@@ -99,6 +123,15 @@ export type PushColor = BaseInterface & {
 	command: PushColorCommandEnum;
 };
 export type PushColorResult = BaseResultInterface & {
+	command: PushColorCommandEnum;
+};
+
+export type PushColorWithDirection = BaseInterface & {
+	command: PushColorCommandEnum;
+	pipelineId: number;
+	direction: number;
+};
+export type PushColorWithDirectionResult = BaseResultInterface & {
 	command: PushColorCommandEnum;
 };
 
@@ -129,14 +162,15 @@ export type ControlDoor = BaseInterface & {
 };
 export type ControlDoorResult = BaseResultInterface;
 
-export type SetUsageTime = BaseInterface & {
-	usageTime: number;
+export type SetExpireTime = BaseInterface & {
+	key: number[];
+	expireTime: CustomDateTime;
 };
-export type SetUsageTimeResult = BaseResultInterface;
+export type SetExpireTimeResult = BaseResultInterface;
 
-export type GetUsageTime = BaseInterface;
-export type GetUsageTimeResult = BaseResultInterface & {
-	usageTime: number;
+export type GetExpireTime = BaseInterface;
+export type GetExpireTimeResult = BaseResultInterface & {
+	expireTime: CustomDateTime;
 };
 
 export type DeviceErrStatus = BaseInterface & {
@@ -159,6 +193,20 @@ export type MachineStatus = BaseInterface & {
 	machineStatus: MachineStatusEnum;
 };
 
+export type PipelineStatus = BaseInterface & {
+	pipelineId: number;
+	remainVolume: number;
+};
+
+export type CustomDateTime = {
+	year: number;
+	month: number;
+	date: number;
+	hour: number;
+	minute: number;
+	second: number;
+};
+
 export const START_BYTE = 0x78;
 export const STOP_BYTE = 0x79;
 
@@ -167,24 +215,33 @@ export type Request =
 	| GetSetting
 	| UpdateSetting
 	| Ping
+	| UpdateSerialNumber
+	| SyncTime
+	| GetRealTime
 	| ChangeColorVolume
 	| PushColor
 	| MixColor
 	| ControlDoor
-	| SetUsageTime
-	| GetUsageTime;
+	| SetExpireTime
+	| GetExpireTime
+	| PushColorWithDirection;
 
 export type Response =
 	| RequestVersionResult
 	| GetSettingResult
 	| UpdateSettingResult
 	| PingResult
+	| UpdateSerialNumberResult
+	| SyncTimeResult
+	| GetRealTimeResult
 	| ChangeColorVolumeResult
 	| PushColorResult
 	| MixColorResult
 	| ControlDoorResult
-	| SetUsageTimeResult
-	| GetUsageTimeResult
+	| SetExpireTimeResult
+	| GetExpireTimeResult
+	| PushColorWithDirectionResult
 	| DeviceErrStatus
 	| InputSts
-	| MachineStatus;
+	| MachineStatus
+	| PipelineStatus;

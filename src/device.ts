@@ -10,8 +10,8 @@ import {
 	DeviceErrStatus,
 	GetSetting,
 	GetSettingResult,
-	GetUsageTime,
-	GetUsageTimeResult,
+	GetExpireTime,
+	GetExpireTimeResult,
 	InputSts,
 	MachineStatus,
 	MixColor,
@@ -19,21 +19,33 @@ import {
 	Ping,
 	PingResult,
 	PipelineSetting,
+	PipelineStatus,
 	ProtocolId,
 	PushColor,
 	PushColorResult,
 	RequestVersion,
 	RequestVersionResult,
 	Response,
-	SetUsageTime,
-	SetUsageTimeResult,
+	SetExpireTime,
+	SetExpireTimeResult,
 	START_BYTE,
 	STOP_BYTE,
 	UpdateSetting,
 	UpdateSettingResult,
+	UpdateSerialNumber,
+	UpdateSerialNumberResult,
+	SyncTime,
+	SyncTimeResult,
+	GetRealTime,
+	GetRealTimeResult,
+	ResetDefaultSetting,
+	ResetDefaultSettingResult,
+	PushColorWithDirection,
+	PushColorWithDirectionResult,
 } from "./interface";
 import { SerialPort } from "serialport";
 import {
+	byteArrayToFloat,
 	calculateChecksum,
 	calculateChecksumFromBuffer,
 	floatToByteArray,
@@ -55,7 +67,7 @@ export class Device implements DeviceInterface {
 	private _buffer = Buffer.from([]);
 	private _CHECK_DEVICE_PORT_INTERVAL = 1000;
 	private _BAUDRATE_DEFAULT = 9600;
-	private _RX_BUFFER_MAX_SIZE = 128;
+	private _RX_BUFFER_MAX_SIZE = 1024;
 	public async start(): Promise<void> {
 		this._timerToCheckDevicePort = setInterval(async () => {
 			if (this._port?.isOpen) {
@@ -162,7 +174,7 @@ export class Device implements DeviceInterface {
 		const data = [];
 		data.push(START_BYTE);
 		data.push(payload.protocolId);
-		data.push(16 * 7 + 10);
+		data.push(16 * 9 + 8);
 		for (let index = 0; index < 16; index++) {
 			data.push(payload.pipeLineSettings[index].pulCoefficient);
 			data.push(payload.pipeLineSettings[index].pulPer1ms >> 8);
@@ -171,11 +183,11 @@ export class Device implements DeviceInterface {
 			data.push(payload.pipeLineSettings[index].pulPer01ms & 0xff);
 			data.push(payload.pipeLineSettings[index].pulPer001ms >> 8);
 			data.push(payload.pipeLineSettings[index].pulPer001ms & 0xff);
+			data.push(payload.pipeLineSettings[index].tOnForPushColor >> 8);
+			data.push(payload.pipeLineSettings[index].tOnForPushColor & 0xff);
 		}
 		data.push(payload.closeDoorAngle);
 		data.push(payload.openDoorAngle);
-		data.push(payload.tOnForPushColor >> 8);
-		data.push(payload.tOnForPushColor & 0xff);
 		data.push(payload.tOnForMixColor >> 8);
 		data.push(payload.tOnForMixColor & 0xff);
 		data.push(payload.mixerSpeedLowLevel);
@@ -223,6 +235,121 @@ export class Device implements DeviceInterface {
 				)
 			)
 		)) as PingResult;
+	}
+	public async updateSerialNumber(
+		payload: UpdateSerialNumber
+	): Promise<UpdateSerialNumberResult> {
+		const data = [];
+		data.push(START_BYTE);
+		data.push(payload.protocolId);
+		data.push(6);
+
+		data.push(payload.serialNumber[0]);
+		data.push(payload.serialNumber[1]);
+		data.push(payload.serialNumber[2]);
+		data.push(payload.serialNumber[3]);
+		data.push(payload.serialNumber[4]);
+		data.push(payload.serialNumber[5]);
+
+		const checksum = calculateChecksum(data.slice(3, data.length));
+		data.push(checksum >> 8);
+		data.push(checksum & 0xff);
+		data.push(STOP_BYTE);
+		// 		this._logger.info(data);
+		if (this._port?.open) {
+			this._port.write(Buffer.from(data));
+		}
+		return (await firstValueFrom(
+			this._subject.pipe(
+				filter(
+					(response) =>
+						response.protocolId ===
+						ProtocolId.PROTOCOL_ID_CMD_UPDATE_SERIAL_NUMBER
+				)
+			)
+		)) as PingResult;
+	}
+	public async syncTime(payload: SyncTime): Promise<SyncTimeResult> {
+		const data = [];
+		data.push(START_BYTE);
+		data.push(payload.protocolId);
+		data.push(7);
+
+		data.push((payload.time.year >> 8) & 0xff);
+		data.push(payload.time.year & 0xff);
+		data.push(payload.time.month & 0xff);
+		data.push(payload.time.date & 0xff);
+		data.push(payload.time.hour & 0xff);
+		data.push(payload.time.minute & 0xff);
+		data.push(payload.time.second & 0xff);
+
+		const checksum = calculateChecksum(data.slice(3, data.length));
+		data.push(checksum >> 8);
+		data.push(checksum & 0xff);
+		data.push(STOP_BYTE);
+		// 		this._logger.info(data);
+		if (this._port?.open) {
+			this._port.write(Buffer.from(data));
+		}
+		return (await firstValueFrom(
+			this._subject.pipe(
+				filter(
+					(response) =>
+						response.protocolId ===
+						ProtocolId.PROTOCOL_ID_CMD_SYNC_TIME
+				)
+			)
+		)) as SyncTimeResult;
+	}
+
+	public async getRealTime(payload: GetRealTime): Promise<GetRealTimeResult> {
+		const data = [];
+		data.push(START_BYTE);
+		data.push(payload.protocolId);
+		data.push(0);
+		const checksum = calculateChecksum(data.slice(3, data.length));
+		data.push(checksum >> 8);
+		data.push(checksum & 0xff);
+		data.push(STOP_BYTE);
+		// 		this._logger.info(data);
+		if (this._port?.open) {
+			this._port.write(Buffer.from(data));
+		}
+		return (await firstValueFrom(
+			this._subject.pipe(
+				filter(
+					(response) =>
+						response.protocolId ===
+						ProtocolId.PROTOCOL_ID_CMD_GET_REAL_TIME
+				)
+			)
+		)) as GetRealTimeResult;
+	}
+
+	public async resetDefaultSetting(
+		payload: ResetDefaultSetting
+	): Promise<ResetDefaultSettingResult> {
+		const data = [];
+		data.push(START_BYTE);
+		data.push(payload.protocolId);
+		data.push(0);
+		const checksum = calculateChecksum(data.slice(3, data.length));
+		data.push(checksum >> 8);
+		data.push(checksum & 0xff);
+		data.push(STOP_BYTE);
+		// 		this._logger.info(data);
+		if (this._port?.open) {
+			this._port.write(Buffer.from(data));
+		}
+		return (await firstValueFrom(
+			this._subject.pipe(
+				filter(
+					(response) =>
+						response.protocolId ===
+						ProtocolId.PROTOCOL_ID_CMD_RESET_DEFAULT_SETTING
+				)
+			)
+		)) as ResetDefaultSettingResult;
 	}
 
 	public async changeColorVolume(
@@ -332,23 +459,35 @@ export class Device implements DeviceInterface {
 		)) as ControlDoorResult;
 	}
 
-	public async setUsageTime(
-		payload: SetUsageTime
-	): Promise<SetUsageTimeResult> {
+	public async setExpireTime(
+		payload: SetExpireTime
+	): Promise<SetExpireTimeResult> {
 		const data = [];
 		data.push(START_BYTE);
 		data.push(payload.protocolId);
-		data.push(4);
-		data.push((payload.usageTime >> 24) & 0xff);
-		data.push((payload.usageTime >> 16) & 0xff);
-		data.push((payload.usageTime >> 8) & 0xff);
-		data.push(payload.usageTime & 0xff);
+		data.push(23);
+		if (payload.key.length != 16) {
+			this._logger.error(
+				`Invalid key length ${payload.key.length}, expect 16`
+			);
+			return null;
+		}
+		for (let index = 0; index < 16; index++) {
+			data.push(payload.key.at(index) & 0xff);
+		}
+		data.push((payload.expireTime.year >> 8) & 0xff);
+		data.push(payload.expireTime.year & 0xff);
+		data.push(payload.expireTime.month & 0xff);
+		data.push(payload.expireTime.date & 0xff);
+		data.push(payload.expireTime.hour & 0xff);
+		data.push(payload.expireTime.minute & 0xff);
+		data.push(payload.expireTime.second & 0xff);
 
 		const checksum = calculateChecksum(data.slice(3, data.length));
 		data.push(checksum >> 8);
 		data.push(checksum & 0xff);
 		data.push(STOP_BYTE);
-		// 		this._logger.info(data);
+		this._logger.info(data);
 		if (this._port?.open) {
 			this._port.write(Buffer.from(data));
 		}
@@ -357,15 +496,15 @@ export class Device implements DeviceInterface {
 				filter(
 					(response) =>
 						response.protocolId ===
-						ProtocolId.PROTOCOL_ID_CMD_SET_USAGE_TIME
+						ProtocolId.PROTOCOL_ID_CMD_SET_EXPIRE_TIME
 				)
 			)
-		)) as SetUsageTimeResult;
+		)) as SetExpireTimeResult;
 	}
 
-	public async getUsageTime(
-		payload: GetUsageTime
-	): Promise<GetUsageTimeResult> {
+	public async getExpireTime(
+		payload: GetExpireTime
+	): Promise<GetExpireTimeResult> {
 		const data = [];
 		data.push(START_BYTE);
 		data.push(payload.protocolId);
@@ -383,10 +522,39 @@ export class Device implements DeviceInterface {
 				filter(
 					(response) =>
 						response.protocolId ===
-						ProtocolId.PROTOCOL_ID_CMD_GET_USAGE_TIME
+						ProtocolId.PROTOCOL_ID_CMD_GET_EXPIRE_TIME
 				)
 			)
-		)) as GetUsageTimeResult;
+		)) as GetExpireTimeResult;
+	}
+
+	public async pushColorWithDirection(
+		payload: PushColorWithDirection
+	): Promise<PushColorWithDirectionResult> {
+		const data = [];
+		data.push(START_BYTE);
+		data.push(payload.protocolId);
+		data.push(3);
+		data.push(payload.command);
+		data.push(payload.pipelineId);
+		data.push(payload.direction);
+		const checksum = calculateChecksum(data.slice(3, data.length));
+		data.push(checksum >> 8);
+		data.push(checksum & 0xff);
+		data.push(STOP_BYTE);
+		// 		this._logger.info(data);
+		if (this._port?.open) {
+			this._port.write(Buffer.from(data));
+		}
+		return (await firstValueFrom(
+			this._subject.pipe(
+				filter(
+					(response) =>
+						response.protocolId ===
+						ProtocolId.PROTOCOL_ID_CMD_PUSH_COLOR_COMMAND_W_DIRECTION
+				)
+			)
+		)) as PushColorWithDirectionResult;
 	}
 
 	getObservable(): Observable<Response> {
@@ -460,9 +628,12 @@ export class Device implements DeviceInterface {
 			case ProtocolId.PROTOCOL_ID_CMD_UPDATE_SETTING:
 			case ProtocolId.PROTOCOL_ID_CMD_CHANGE_COLOR_VOLUME:
 			case ProtocolId.PROTOCOL_ID_CMD_DOOR_CONTROL:
-			case ProtocolId.PROTOCOL_ID_CMD_SET_USAGE_TIME:
-			case ProtocolId.PROTOCOL_ID_CMD_PING: {
-				const result = buffer.at(3);
+			case ProtocolId.PROTOCOL_ID_CMD_SET_EXPIRE_TIME:
+			case ProtocolId.PROTOCOL_ID_CMD_PING:
+			case ProtocolId.PROTOCOL_ID_CMD_UPDATE_SERIAL_NUMBER:
+			case ProtocolId.PROTOCOL_ID_CMD_RESET_DEFAULT_SETTING:
+			case ProtocolId.PROTOCOL_ID_CMD_SYNC_TIME: {
+				const result = buffer.at(startByteIndex + 3);
 				const response: BaseResultInterface = {
 					protocolId,
 					result,
@@ -471,16 +642,50 @@ export class Device implements DeviceInterface {
 				this.sendBack(response);
 				break;
 			}
+			case ProtocolId.PROTOCOL_ID_CMD_GET_REAL_TIME: {
+				const result = buffer.at(startByteIndex + 3);
+				const year =
+					(buffer.at(startByteIndex + 4) << 8) |
+					buffer.at(startByteIndex + 5);
+				const month = buffer.at(startByteIndex + 6);
+				const date = buffer.at(startByteIndex + 7);
+				const hour = buffer.at(startByteIndex + 8);
+				const minute = buffer.at(startByteIndex + 9);
+				const second = buffer.at(startByteIndex + 10);
+				const realTimeResult: GetRealTimeResult = {
+					protocolId,
+					result,
+					time: {
+						year,
+						month,
+						date,
+						hour,
+						minute,
+						second,
+					},
+				};
+				cutLen = 11 + 3; // 2 for checksum , 1 for stop byte
+				this.sendBack(realTimeResult);
+				break;
+			}
 			case ProtocolId.PROTOCOL_ID_CMD_REQUEST_VERSION: {
-				const result = buffer.at(3);
-				const serialNumber = buffer.subarray(4, 10).toString("ascii");
-				const firmwareVersion = `${buffer.at(10)}.${buffer.at(
-					11
-				)}.${buffer.at(12)}`;
-				const boardVersion = `${buffer.at(13)}.${buffer.at(
-					14
-				)}.${buffer.at(15)}`;
-				const boardType = (buffer.at(16) << 8) | buffer.at(17);
+				const result = buffer.at(startByteIndex + 3);
+				const serialNumber = buffer
+					.subarray(startByteIndex + 4, startByteIndex + 10)
+					.toString("ascii");
+				const firmwareVersion = `${buffer.at(
+					startByteIndex + 10
+				)}.${buffer.at(startByteIndex + 11)}.${buffer.at(
+					startByteIndex + 12
+				)}`;
+				const boardVersion = `${buffer.at(
+					startByteIndex + 13
+				)}.${buffer.at(startByteIndex + 14)}.${buffer.at(
+					startByteIndex + 15
+				)}`;
+				const boardType =
+					(buffer.at(startByteIndex + 16) << 8) |
+					buffer.at(startByteIndex + 17);
 				const requestVersionResult: RequestVersionResult = {
 					protocolId,
 					result,
@@ -494,38 +699,50 @@ export class Device implements DeviceInterface {
 				break;
 			}
 			case ProtocolId.PROTOCOL_ID_CMD_GET_SETTING: {
-				const result = buffer.at(3);
+				const result = buffer.at(startByteIndex + 3);
 				let pipeLineSettings = new Array<PipelineSetting>();
 				for (let index = 0; index < 16; index++) {
-					const pulCoefficient = buffer[4 + index * 7];
+					const pulCoefficient =
+						buffer[startByteIndex + 4 + index * 9];
 					const pulPer1ms =
-						(buffer.at(4 + index * 7 + 1) << 8) |
-						buffer.at(4 + index * 7 + 2);
+						(buffer.at(startByteIndex + 4 + index * 9 + 1) << 8) |
+						buffer.at(startByteIndex + 4 + index * 9 + 2);
 					const pulPer01ms =
-						(buffer.at(4 + index * 7 + 3) << 8) |
-						buffer.at(4 + index * 7 + 4);
+						(buffer.at(startByteIndex + 4 + index * 9 + 3) << 8) |
+						buffer.at(startByteIndex + 4 + index * 9 + 4);
 					const pulPer001ms =
-						(buffer.at(4 + index * 7 + 5) << 8) |
-						buffer.at(4 + index * 7 + 6);
+						(buffer.at(startByteIndex + 4 + index * 9 + 5) << 8) |
+						buffer.at(startByteIndex + 4 + index * 9 + 6);
+					const tOnForPushColor =
+						(buffer.at(startByteIndex + 4 + index * 9 + 7) << 8) |
+						buffer.at(startByteIndex + 4 + index * 9 + 8);
 					pipeLineSettings.push({
 						pulCoefficient,
 						pulPer1ms,
 						pulPer01ms,
 						pulPer001ms,
+						tOnForPushColor,
 					});
 				}
-				const closeDoorAngle = buffer.at(4 + 16 * 7);
-				const openDoorAngle = buffer.at(4 + 16 * 7 + 1);
-				const tOnForPushColor =
-					(buffer.at(4 + 16 * 7 + 2) << 8) |
-					buffer.at(4 + 16 * 7 + 3);
+				const closeDoorAngle = buffer.at(startByteIndex + 4 + 16 * 9);
+				const openDoorAngle = buffer.at(
+					startByteIndex + 4 + 16 * 9 + 1
+				);
 				const tOnForMixColor =
-					(buffer.at(4 + 16 * 7 + 4) << 8) |
-					buffer.at(4 + 16 * 7 + 5);
-				const mixerSpeedLowLevel = buffer.at(4 + 16 * 7 + 6);
-				const mixerSpeedMediumLevel = buffer.at(4 + 16 * 7 + 7);
-				const mixerSpeedHighLevel = buffer.at(4 + 16 * 7 + 8);
-				const mixerSpeedCurrLevel = buffer.at(4 + 16 * 7 + 9);
+					(buffer.at(startByteIndex + 4 + 16 * 9 + 2) << 8) |
+					buffer.at(startByteIndex + 4 + 16 * 9 + 3);
+				const mixerSpeedLowLevel = buffer.at(
+					startByteIndex + 4 + 16 * 9 + 4
+				);
+				const mixerSpeedMediumLevel = buffer.at(
+					startByteIndex + 4 + 16 * 9 + 5
+				);
+				const mixerSpeedHighLevel = buffer.at(
+					startByteIndex + 4 + 16 * 9 + 6
+				);
+				const mixerSpeedCurrLevel = buffer.at(
+					startByteIndex + 4 + 16 * 9 + 7
+				);
 
 				const getSettingResult: GetSettingResult = {
 					protocolId,
@@ -533,20 +750,19 @@ export class Device implements DeviceInterface {
 					pipeLineSettings,
 					closeDoorAngle,
 					openDoorAngle,
-					tOnForPushColor,
 					tOnForMixColor,
 					mixerSpeedLowLevel,
 					mixerSpeedMediumLevel,
 					mixerSpeedHighLevel,
 					mixerSpeedCurrLevel,
 				};
-				cutLen = 4 + 16 * 7 + 10 + 3; // 2 for checksum , 1 for stop byte
+				cutLen = 4 + 16 * 9 + 8 + 3; // 2 for checksum , 1 for stop byte
 				this.sendBack(getSettingResult);
 				break;
 			}
 			case ProtocolId.PROTOCOL_ID_CMD_PUSH_COLOR_COMMAND: {
-				const result = buffer.at(3);
-				const command = buffer.at(4);
+				const result = buffer.at(startByteIndex + 3);
+				const command = buffer.at(startByteIndex + 4);
 				const pushColorResult: PushColorResult = {
 					protocolId,
 					result,
@@ -557,8 +773,8 @@ export class Device implements DeviceInterface {
 				break;
 			}
 			case ProtocolId.PROTOCOL_ID_CMD_MIX_COLOR_COMMAND: {
-				const result = buffer.at(3);
-				const command = buffer.at(4);
+				const result = buffer.at(startByteIndex + 3);
+				const command = buffer.at(startByteIndex + 4);
 				const mixColorResult: MixColorResult = {
 					protocolId,
 					result,
@@ -568,24 +784,36 @@ export class Device implements DeviceInterface {
 				this.sendBack(mixColorResult);
 				break;
 			}
-			case ProtocolId.PROTOCOL_ID_CMD_GET_USAGE_TIME: {
-				const result = buffer.at(3);
-				const usageTime =
-					(buffer.at(4) << 24) |
-					(buffer.at(5) << 16) |
-					(buffer.at(6) << 8) |
-					buffer.at(7);
-				const usageTimeResult: GetUsageTimeResult = {
+			case ProtocolId.PROTOCOL_ID_CMD_GET_EXPIRE_TIME: {
+				const result = buffer.at(startByteIndex + 3);
+				const year =
+					(buffer.at(startByteIndex + 4) << 8) |
+					buffer.at(startByteIndex + 5);
+				const month = buffer.at(startByteIndex + 6);
+				const date = buffer.at(startByteIndex + 7);
+				const hour = buffer.at(startByteIndex + 8);
+				const minute = buffer.at(startByteIndex + 9);
+				const second = buffer.at(startByteIndex + 10);
+				const usageTimeResult: GetExpireTimeResult = {
 					protocolId,
 					result,
-					usageTime,
+					expireTime: {
+						year,
+						month,
+						date,
+						hour,
+						minute,
+						second,
+					},
 				};
-				cutLen = 8 + 3; // 2 for checksum , 1 for stop byte
+				cutLen = 11 + 3; // 2 for checksum , 1 for stop byte
 				this.sendBack(usageTimeResult);
 				break;
 			}
 			case ProtocolId.PROTOCOL_ID_STS_DEVICE_ERR: {
-				const deviceErr = (buffer.at(3) << 8) | buffer.at(4);
+				const deviceErr =
+					(buffer.at(startByteIndex + 3) << 8) |
+					buffer.at(startByteIndex + 4);
 				const deviceErrorSts: DeviceErrStatus = {
 					protocolId,
 					eepromError: (deviceErr & 0x8000) != 0,
@@ -596,11 +824,11 @@ export class Device implements DeviceInterface {
 				break;
 			}
 			case ProtocolId.PROTOCOL_ID_STS_LASER: {
-				const sts = buffer.at(3);
+				const sts = buffer.at(startByteIndex + 3);
 				const inputSts: InputSts = {
 					protocolId,
-					doorClosed: (sts & 0x01) != 0,
-					doorOpened: (sts & 0x02) != 0,
+					doorOpened: (sts & 0x01) != 0,
+					doorClosed: (sts & 0x02) != 0,
 					canDetected: (sts & 0x04) != 0,
 					reserved: (sts & 0x08) != 0,
 				};
@@ -609,13 +837,31 @@ export class Device implements DeviceInterface {
 				break;
 			}
 			case ProtocolId.PROTOCOL_ID_STS_MACHINE: {
-				const sts = buffer.at(3);
+				const sts = buffer.at(startByteIndex + 3);
 				const machineStatus: MachineStatus = {
 					protocolId,
 					machineStatus: sts,
 				};
 				cutLen = 4 + 3; // 2 for checksum , 1 for stop byte
 				this.sendBack(machineStatus);
+				break;
+			}
+			case ProtocolId.PROTOCOL_ID_STS_PIPELINE: {
+				const pipelineId = buffer.at(startByteIndex + 3);
+				const remainVolumeByteArr = new Uint8Array([
+					buffer.at(4),
+					buffer.at(5),
+					buffer.at(6),
+					buffer.at(7),
+				]);
+				const remainVolume = byteArrayToFloat(remainVolumeByteArr);
+				const pipelineStatus: PipelineStatus = {
+					protocolId,
+					pipelineId,
+					remainVolume,
+				};
+				cutLen = 8 + 3; // 2 for checksum , 1 for stop byte
+				this.sendBack(pipelineStatus);
 				break;
 			}
 			default:

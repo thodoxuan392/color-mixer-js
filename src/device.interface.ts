@@ -5,8 +5,8 @@ import {
 	ControlDoorResult,
 	GetSetting,
 	GetSettingResult,
-	GetUsageTime,
-	GetUsageTimeResult,
+	GetExpireTime,
+	GetExpireTimeResult,
 	MixColor,
 	MixColorResult,
 	Ping,
@@ -16,10 +16,20 @@ import {
 	RequestVersion,
 	RequestVersionResult,
 	Response,
-	SetUsageTime,
-	SetUsageTimeResult,
+	SetExpireTime,
+	SetExpireTimeResult,
+	UpdateSerialNumber,
+	UpdateSerialNumberResult,
 	UpdateSetting,
 	UpdateSettingResult,
+	SyncTime,
+	SyncTimeResult,
+	GetRealTimeResult,
+	GetRealTime,
+	ResetDefaultSettingResult,
+	ResetDefaultSetting,
+	PushColorWithDirection,
+	PushColorWithDirectionResult,
 } from "./interface";
 import { Observable } from "rxjs";
 
@@ -29,13 +39,24 @@ export interface DeviceInterface {
 	getSetting(payload: GetSetting): Promise<GetSettingResult>;
 	updateSetting(payload: UpdateSetting): Promise<UpdateSettingResult>;
 	ping(payload: Ping): Promise<PingResult>;
+	updateSerialNumber(
+		payload: UpdateSerialNumber
+	): Promise<UpdateSerialNumberResult>;
+	syncTime(payload: SyncTime): Promise<SyncTimeResult>;
+	getRealTime(payload: GetRealTime): Promise<GetRealTimeResult>;
+	resetDefaultSetting(
+		payload: ResetDefaultSetting
+	): Promise<ResetDefaultSettingResult>;
 	changeColorVolume(
 		payload: ChangeColorVolume
 	): Promise<ChangeColorVolumeResult>;
 	pushColor(payload: PushColor): Promise<PushColorResult>;
+	pushColorWithDirection(
+		payload: PushColorWithDirection
+	): Promise<PushColorWithDirectionResult>;
 	mixColor(payload: MixColor): Promise<MixColorResult>;
 	controlDoor(payload: ControlDoor): Promise<ControlDoorResult>;
-	setUsageTime(payload: SetUsageTime): Promise<SetUsageTimeResult>;
-	getUsageTime(payload: GetUsageTime): Promise<GetUsageTimeResult>;
+	setExpireTime(payload: SetExpireTime): Promise<SetExpireTimeResult>;
+	getExpireTime(payload: GetExpireTime): Promise<GetExpireTimeResult>;
 	getObservable(): Observable<Response>;
 }
