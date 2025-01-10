@@ -30,11 +30,18 @@ import {
 	ResetDefaultSetting,
 	PushColorWithDirection,
 	PushColorWithDirectionResult,
+	PushColorFlowControl,
+	PushColorFlowControlResult,
+	ResetResult,
+	Reset,
+	ChangeColorVolumeAll,
+	ChangeColorVolumeAllResult,
 } from "./interface";
 import { Observable } from "rxjs";
 
 export interface DeviceInterface {
 	start(): Promise<void>;
+	reset(payload: Reset): Promise<ResetResult>;
 	requestVersion(payload: RequestVersion): Promise<RequestVersionResult>;
 	getSetting(payload: GetSetting): Promise<GetSettingResult>;
 	updateSetting(payload: UpdateSetting): Promise<UpdateSettingResult>;
@@ -50,10 +57,16 @@ export interface DeviceInterface {
 	changeColorVolume(
 		payload: ChangeColorVolume
 	): Promise<ChangeColorVolumeResult>;
+	changeColorVolumeAll(
+		payload: ChangeColorVolumeAll
+	): Promise<ChangeColorVolumeAllResult>;
 	pushColor(payload: PushColor): Promise<PushColorResult>;
 	pushColorWithDirection(
 		payload: PushColorWithDirection
 	): Promise<PushColorWithDirectionResult>;
+	pushColorFlowControl(
+		payload: PushColorFlowControl
+	): Promise<PushColorFlowControlResult>;
 	mixColor(payload: MixColor): Promise<MixColorResult>;
 	controlDoor(payload: ControlDoor): Promise<ControlDoorResult>;
 	setExpireTime(payload: SetExpireTime): Promise<SetExpireTimeResult>;

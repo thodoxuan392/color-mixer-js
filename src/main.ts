@@ -9,6 +9,7 @@ import {
 	PipelineSetting,
 	ProtocolId,
 	PushColorCommandEnum,
+	PushColorFlowCommand,
 	Request,
 	Response,
 	SyncTime,
@@ -41,6 +42,22 @@ type CommandDescriptor = {
 
 const commandDescriptorTable: CommandDescriptor[] = [
 	{
+		command: "reset",
+		description: "Reset",
+		callbackFunction: device.reset.bind(device),
+		payload: {
+			protocolId: ProtocolId.PROTOCOL_ID_CMD_RESET,
+		},
+	},
+	{
+		command: "ping",
+		description: "Ping to Controller Box to keep connection",
+		callbackFunction: device.ping.bind(device),
+		payload: {
+			protocolId: ProtocolId.PROTOCOL_ID_CMD_PING,
+		},
+	},
+	{
 		command: "request-version",
 		description: "Request version from Controller Box",
 		callbackFunction: device.requestVersion.bind(device),
@@ -65,7 +82,7 @@ const commandDescriptorTable: CommandDescriptor[] = [
 				pulPer1ms: 100,
 				pulPer01ms: 10,
 				pulPer001ms: 1,
-				tOnForPushColor: 400, // 500us ~ 2Khz
+				tOnForPushColor: 1000, // 500us ~ 2Khz
 			};
 			var pipeLineSettings = new Array<PipelineSetting>();
 			for (let index = 0; index < 16; index++) {
@@ -137,12 +154,30 @@ const commandDescriptorTable: CommandDescriptor[] = [
 				response = await device.changeColorVolume({
 					protocolId: ProtocolId.PROTOCOL_ID_CMD_CHANGE_COLOR_VOLUME,
 					pipeLineId: index,
-					volume: 100,
+					volume: 2000,
 				});
 				logger.info(
 					`Change color volume got result ${JSON.stringify(response)}`
 				);
 			}
+			return response;
+		},
+		payload: {
+			protocolId: ProtocolId.PROTOCOL_ID_CMD_CHANGE_COLOR_VOLUME,
+			volume: 1000, // 1000 ml
+		},
+	},
+	{
+		command: "change-color-volume-all",
+		description: "Change color volume for all pl from Controller Box",
+		callbackFunction: async (payload) => {
+			const response = await device.changeColorVolumeAll({
+				protocolId: ProtocolId.PROTOCOL_ID_CMD_CHANGE_COLOR_VOLUME_ALL,
+				volume: 0.01,
+			});
+			logger.info(
+				`Change color volume got result ${JSON.stringify(response)}`
+			);
 			return response;
 		},
 		payload: {
@@ -255,7 +290,7 @@ const commandDescriptorTable: CommandDescriptor[] = [
 		payload: {
 			protocolId: ProtocolId.PROTOCOL_ID_CMD_SET_EXPIRE_TIME,
 			expireTime: {
-				year: 2024,
+				year: 2025,
 				month: 10,
 				date: 14,
 				hour: 20,
@@ -275,6 +310,26 @@ const commandDescriptorTable: CommandDescriptor[] = [
 			command: PushColorCommandEnum.PUSH_COLOR_COMMAND_START,
 			pipelineId: 1,
 			direction: 1,
+		},
+	},
+	{
+		command: "push-color-fl-start",
+		description: "Start push color flow",
+		callbackFunction: device.pushColorFlowControl.bind(device),
+		payload: {
+			protocolId: ProtocolId.PROTOCOL_ID_CMD_PUSH_COLOR_FLOW_CONTROL,
+			command: PushColorFlowCommand.PUSH_COLOR_FLOW_COMMAND_START,
+			direction: 0,
+		},
+	},
+	{
+		command: "push-color-fl-stop",
+		description: "Stop push color flow",
+		callbackFunction: device.pushColorFlowControl.bind(device),
+		payload: {
+			protocolId: ProtocolId.PROTOCOL_ID_CMD_PUSH_COLOR_FLOW_CONTROL,
+			command: PushColorFlowCommand.PUSH_COLOR_FLOW_COMMAND_STOP,
+			direction: 0,
 		},
 	},
 ];

@@ -42,6 +42,13 @@ import {
 	ResetDefaultSettingResult,
 	PushColorWithDirection,
 	PushColorWithDirectionResult,
+	PushColorFlowControl,
+	PushColorFlowControlResult,
+	PushColorFlowStatus,
+	Reset,
+	ResetResult,
+	ChangeColorVolumeAll,
+	ChangeColorVolumeAllResult,
 } from "./interface";
 import { SerialPort } from "serialport";
 import {
@@ -78,7 +85,7 @@ export class Device implements DeviceInterface {
 			}
 			// Get port
 			const ports = await SerialPort.list();
-			console.log(`Device opened ${JSON.stringify(ports)}`);
+			// console.log(`Device opened ${JSON.stringify(ports)}`);
 			const foundPort = ports.find(
 				(port) => port.productId === this._usbProductId
 			);
@@ -118,6 +125,28 @@ export class Device implements DeviceInterface {
 		}, this._CHECK_DEVICE_PORT_INTERVAL);
 	}
 
+	public async reset(payload: Reset): Promise<ResetResult> {
+		const data = [];
+		data.push(START_BYTE);
+		data.push(payload.protocolId);
+		data.push(0);
+		const checksum = calculateChecksum(data.slice(3, data.length));
+		data.push(checksum >> 8);
+		data.push(checksum & 0xff);
+		data.push(STOP_BYTE);
+		this._logger.info(data);
+		if (this._port?.open) {
+			this._port.write(Buffer.from(data));
+		}
+		return (await firstValueFrom(
+			this._subject.pipe(
+				filter(
+					(response) =>
+						response.protocolId === ProtocolId.PROTOCOL_ID_CMD_RESET
+				)
+			)
+		)) as ResetResult;
+	}
 	public async requestVersion(
 		payload: RequestVersion
 	): Promise<RequestVersionResult> {
@@ -129,7 +158,7 @@ export class Device implements DeviceInterface {
 		data.push(checksum >> 8);
 		data.push(checksum & 0xff);
 		data.push(STOP_BYTE);
-		// 		this._logger.info(data);
+		this._logger.info(data);
 		if (this._port?.open) {
 			this._port.write(Buffer.from(data));
 		}
@@ -199,7 +228,7 @@ export class Device implements DeviceInterface {
 		data.push(checksum >> 8);
 		data.push(checksum & 0xff);
 		data.push(STOP_BYTE);
-		// 		this._logger.info(data);
+		this._logger.info(data);
 		if (this._port?.open) {
 			this._port.write(Buffer.from(data));
 		}
@@ -223,7 +252,7 @@ export class Device implements DeviceInterface {
 		data.push(checksum >> 8);
 		data.push(checksum & 0xff);
 		data.push(STOP_BYTE);
-		// 		this._logger.info(data);
+		this._logger.info(data);
 		if (this._port?.open) {
 			this._port.write(Buffer.from(data));
 		}
@@ -255,7 +284,7 @@ export class Device implements DeviceInterface {
 		data.push(checksum >> 8);
 		data.push(checksum & 0xff);
 		data.push(STOP_BYTE);
-		// 		this._logger.info(data);
+		this._logger.info(data);
 		if (this._port?.open) {
 			this._port.write(Buffer.from(data));
 		}
@@ -287,7 +316,7 @@ export class Device implements DeviceInterface {
 		data.push(checksum >> 8);
 		data.push(checksum & 0xff);
 		data.push(STOP_BYTE);
-		// 		this._logger.info(data);
+		this._logger.info(data);
 		if (this._port?.open) {
 			this._port.write(Buffer.from(data));
 		}
@@ -311,7 +340,7 @@ export class Device implements DeviceInterface {
 		data.push(checksum >> 8);
 		data.push(checksum & 0xff);
 		data.push(STOP_BYTE);
-		// 		this._logger.info(data);
+		this._logger.info(data);
 		if (this._port?.open) {
 			this._port.write(Buffer.from(data));
 		}
@@ -337,7 +366,7 @@ export class Device implements DeviceInterface {
 		data.push(checksum >> 8);
 		data.push(checksum & 0xff);
 		data.push(STOP_BYTE);
-		// 		this._logger.info(data);
+		this._logger.info(data);
 		if (this._port?.open) {
 			this._port.write(Buffer.from(data));
 		}
@@ -369,7 +398,7 @@ export class Device implements DeviceInterface {
 		data.push(checksum >> 8);
 		data.push(checksum & 0xff);
 		data.push(STOP_BYTE);
-		// 		this._logger.info(data);
+		this._logger.info(data);
 		if (this._port?.open) {
 			this._port.write(Buffer.from(data));
 		}
@@ -384,6 +413,37 @@ export class Device implements DeviceInterface {
 		)) as ChangeColorVolumeResult;
 	}
 
+	public async changeColorVolumeAll(
+		payload: ChangeColorVolumeAll
+	): Promise<ChangeColorVolumeAllResult> {
+		const data = [];
+		data.push(START_BYTE);
+		data.push(payload.protocolId);
+		data.push(4);
+		const volumeByteArr = floatToByteArray(payload.volume);
+		data.push(volumeByteArr.at(0));
+		data.push(volumeByteArr.at(1));
+		data.push(volumeByteArr.at(2));
+		data.push(volumeByteArr.at(3));
+		const checksum = calculateChecksum(data.slice(3, data.length));
+		data.push(checksum >> 8);
+		data.push(checksum & 0xff);
+		data.push(STOP_BYTE);
+		this._logger.info(data);
+		if (this._port?.open) {
+			this._port.write(Buffer.from(data));
+		}
+		return (await firstValueFrom(
+			this._subject.pipe(
+				filter(
+					(response) =>
+						response.protocolId ===
+						ProtocolId.PROTOCOL_ID_CMD_CHANGE_COLOR_VOLUME_ALL
+				)
+			)
+		)) as ChangeColorVolumeAllResult;
+	}
+
 	public async pushColor(payload: PushColor): Promise<PushColorResult> {
 		const data = [];
 		data.push(START_BYTE);
@@ -394,7 +454,7 @@ export class Device implements DeviceInterface {
 		data.push(checksum >> 8);
 		data.push(checksum & 0xff);
 		data.push(STOP_BYTE);
-		// 		this._logger.info(data);
+		this._logger.info(data);
 		if (this._port?.open) {
 			this._port.write(Buffer.from(data));
 		}
@@ -419,7 +479,7 @@ export class Device implements DeviceInterface {
 		data.push(checksum >> 8);
 		data.push(checksum & 0xff);
 		data.push(STOP_BYTE);
-		// 		this._logger.info(data);
+		this._logger.info(data);
 		if (this._port?.open) {
 			this._port.write(Buffer.from(data));
 		}
@@ -444,7 +504,7 @@ export class Device implements DeviceInterface {
 		data.push(checksum >> 8);
 		data.push(checksum & 0xff);
 		data.push(STOP_BYTE);
-		// 		this._logger.info(data);
+		this._logger.info(data);
 		if (this._port?.open) {
 			this._port.write(Buffer.from(data));
 		}
@@ -513,7 +573,7 @@ export class Device implements DeviceInterface {
 		data.push(checksum >> 8);
 		data.push(checksum & 0xff);
 		data.push(STOP_BYTE);
-		// 		this._logger.info(data);
+		this._logger.info(data);
 		if (this._port?.open) {
 			this._port.write(Buffer.from(data));
 		}
@@ -542,7 +602,7 @@ export class Device implements DeviceInterface {
 		data.push(checksum >> 8);
 		data.push(checksum & 0xff);
 		data.push(STOP_BYTE);
-		// 		this._logger.info(data);
+		this._logger.info(data);
 		if (this._port?.open) {
 			this._port.write(Buffer.from(data));
 		}
@@ -555,6 +615,34 @@ export class Device implements DeviceInterface {
 				)
 			)
 		)) as PushColorWithDirectionResult;
+	}
+
+	public async pushColorFlowControl(
+		payload: PushColorFlowControl
+	): Promise<PushColorFlowControlResult> {
+		const data = [];
+		data.push(START_BYTE);
+		data.push(payload.protocolId);
+		data.push(2);
+		data.push(payload.command);
+		data.push(payload.direction);
+		const checksum = calculateChecksum(data.slice(3, data.length));
+		data.push(checksum >> 8);
+		data.push(checksum & 0xff);
+		data.push(STOP_BYTE);
+		this._logger.info(data);
+		if (this._port?.open) {
+			this._port.write(Buffer.from(data));
+		}
+		return (await firstValueFrom(
+			this._subject.pipe(
+				filter(
+					(response) =>
+						response.protocolId ===
+						ProtocolId.PROTOCOL_ID_CMD_PUSH_COLOR_FLOW_CONTROL
+				)
+			)
+		)) as PushColorFlowControlResult;
 	}
 
 	getObservable(): Observable<Response> {
@@ -605,14 +693,15 @@ export class Device implements DeviceInterface {
 		const expectedChecksum = calculateChecksumFromBuffer(
 			buffer.slice(startByteIndex + 3, startByteIndex + 3 + data_len)
 		);
+
+		if (buffer.length < startByteIndex + data_len + 6) {
+			return { success: false, cutLen: 0 };
+		}
+
 		if (checksum != expectedChecksum) {
 			this._logger.error(
 				`Check sum is not valid ${checksum} is not valid, expected ${expectedChecksum}`
 			);
-			return { success: false, cutLen: 0 };
-		}
-
-		if (buffer.length < startByteIndex + data_len + 6) {
 			return { success: false, cutLen: 0 };
 		}
 
@@ -627,12 +716,14 @@ export class Device implements DeviceInterface {
 		switch (protocolId) {
 			case ProtocolId.PROTOCOL_ID_CMD_UPDATE_SETTING:
 			case ProtocolId.PROTOCOL_ID_CMD_CHANGE_COLOR_VOLUME:
+			case ProtocolId.PROTOCOL_ID_CMD_CHANGE_COLOR_VOLUME_ALL:
 			case ProtocolId.PROTOCOL_ID_CMD_DOOR_CONTROL:
 			case ProtocolId.PROTOCOL_ID_CMD_SET_EXPIRE_TIME:
 			case ProtocolId.PROTOCOL_ID_CMD_PING:
 			case ProtocolId.PROTOCOL_ID_CMD_UPDATE_SERIAL_NUMBER:
 			case ProtocolId.PROTOCOL_ID_CMD_RESET_DEFAULT_SETTING:
-			case ProtocolId.PROTOCOL_ID_CMD_SYNC_TIME: {
+			case ProtocolId.PROTOCOL_ID_CMD_SYNC_TIME:
+			case ProtocolId.PROTOCOL_ID_CMD_RESET: {
 				const result = buffer.at(startByteIndex + 3);
 				const response: BaseResultInterface = {
 					protocolId,
@@ -810,6 +901,30 @@ export class Device implements DeviceInterface {
 				this.sendBack(usageTimeResult);
 				break;
 			}
+			case ProtocolId.PROTOCOL_ID_CMD_PUSH_COLOR_COMMAND_W_DIRECTION: {
+				const result = buffer.at(startByteIndex + 3);
+				const command = buffer.at(startByteIndex + 4);
+				const pushColorWithDirResult: PushColorWithDirectionResult = {
+					protocolId,
+					result,
+					command,
+				};
+				cutLen = 5 + 3; // 2 for checksum , 1 for stop byte
+				this.sendBack(pushColorWithDirResult);
+				break;
+			}
+			case ProtocolId.PROTOCOL_ID_CMD_PUSH_COLOR_FLOW_CONTROL: {
+				const result = buffer.at(startByteIndex + 3);
+				const command = buffer.at(startByteIndex + 4);
+				const pushColorFlControlResult: PushColorFlowControlResult = {
+					protocolId,
+					result,
+					command,
+				};
+				cutLen = 5 + 3; // 2 for checksum , 1 for stop byte
+				this.sendBack(pushColorFlControlResult);
+				break;
+			}
 			case ProtocolId.PROTOCOL_ID_STS_DEVICE_ERR: {
 				const deviceErr =
 					(buffer.at(startByteIndex + 3) << 8) |
@@ -862,6 +977,17 @@ export class Device implements DeviceInterface {
 				};
 				cutLen = 8 + 3; // 2 for checksum , 1 for stop byte
 				this.sendBack(pipelineStatus);
+				break;
+			}
+			case ProtocolId.PROTOCOL_ID_STS_PUSH_COLOR_FL_STS: {
+				const sts = buffer.at(startByteIndex + 3);
+				const pushColorFlowSts: PushColorFlowStatus = {
+					protocolId,
+					status: sts,
+				};
+				cutLen = 4 + 3; // 2 for checksum , 1 for stop byte
+				this.sendBack(pushColorFlowSts);
+				this._logger.info(`Push Flow Status: ${sts}`);
 				break;
 			}
 			default:

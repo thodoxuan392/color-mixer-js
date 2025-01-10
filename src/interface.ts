@@ -19,7 +19,10 @@ export enum ProtocolId {
 	PROTOCOL_ID_CMD_DOOR_CONTROL = 0x15,
 	PROTOCOL_ID_CMD_SET_EXPIRE_TIME = 0x16,
 	PROTOCOL_ID_CMD_GET_EXPIRE_TIME = 0x17,
+	PROTOCOL_ID_CMD_CHANGE_COLOR_VOLUME_ALL = 0x18,
 	PROTOCOL_ID_CMD_PUSH_COLOR_COMMAND_W_DIRECTION = 0x19,
+	PROTOCOL_ID_CMD_PUSH_COLOR_FLOW_CONTROL = 0x60,
+
 	PROTOCOL_ID_CMD_MAX,
 
 	// Status
@@ -27,6 +30,7 @@ export enum ProtocolId {
 	PROTOCOL_ID_STS_LASER = 0x31,
 	PROTOCOL_ID_STS_MACHINE = 0x32,
 	PROTOCOL_ID_STS_PIPELINE = 0x33,
+	PROTOCOL_ID_STS_PUSH_COLOR_FL_STS = 0x34,
 
 	PROTOCOL_ID_MAX,
 }
@@ -53,6 +57,10 @@ export type BaseInterface = {
 export type BaseResultInterface = BaseInterface & {
 	result: Result;
 };
+
+export type Reset = BaseInterface;
+export type ResetResult = BaseResultInterface;
+
 export type RequestVersion = BaseInterface;
 export type RequestVersionResult = BaseResultInterface & {
 	serialNumber: string;
@@ -135,6 +143,19 @@ export type PushColorWithDirectionResult = BaseResultInterface & {
 	command: PushColorCommandEnum;
 };
 
+export enum PushColorFlowCommand {
+	PUSH_COLOR_FLOW_COMMAND_START = 0x00,
+	PUSH_COLOR_FLOW_COMMAND_STOP = 0x01,
+}
+
+export type PushColorFlowControl = BaseInterface & {
+	command: PushColorFlowCommand;
+	direction: number;
+};
+export type PushColorFlowControlResult = BaseResultInterface & {
+	command: PushColorFlowCommand;
+};
+
 export enum MixColorCommandEnum {
 	MIX_COLOR_COMMAND_START = 0x00,
 	MIX_COLOR_COMMAND_STOP = 0x01,
@@ -173,6 +194,11 @@ export type GetExpireTimeResult = BaseResultInterface & {
 	expireTime: CustomDateTime;
 };
 
+export type ChangeColorVolumeAll = BaseInterface & {
+	volume: number;
+};
+export type ChangeColorVolumeAllResult = BaseResultInterface;
+
 export type DeviceErrStatus = BaseInterface & {
 	pipelineError: boolean[];
 	eepromError: boolean;
@@ -207,6 +233,19 @@ export type CustomDateTime = {
 	second: number;
 };
 
+export enum PushColorFlowStatusEnum {
+	PUSH_COLOR_FLOW_STATUS_IDLE = 0x00,
+	PUSH_COLOR_FLOW_STATUS_DOOR_OPENING = 0x01,
+	PUSH_COLOR_FLOW_STATUS_PUSHING_COLOR = 0x02,
+	PUSH_COLOR_FLOW_STATUS_DOOR_CLOSING = 0x03,
+	PUSH_COLOR_FLOW_STATUS_COMPLETED = 0x04,
+	PUSH_COLOR_FLOW_STATUS_ERROR = 0x05,
+}
+
+export type PushColorFlowStatus = BaseInterface & {
+	status: PushColorFlowStatusEnum;
+};
+
 export const START_BYTE = 0x78;
 export const STOP_BYTE = 0x79;
 
@@ -224,7 +263,9 @@ export type Request =
 	| ControlDoor
 	| SetExpireTime
 	| GetExpireTime
-	| PushColorWithDirection;
+	| ChangeColorVolumeAll
+	| PushColorWithDirection
+	| PushColorFlowControl;
 
 export type Response =
 	| RequestVersionResult
@@ -234,6 +275,7 @@ export type Response =
 	| UpdateSerialNumberResult
 	| SyncTimeResult
 	| GetRealTimeResult
+	| ChangeColorVolumeAllResult
 	| ChangeColorVolumeResult
 	| PushColorResult
 	| MixColorResult
@@ -241,7 +283,9 @@ export type Response =
 	| SetExpireTimeResult
 	| GetExpireTimeResult
 	| PushColorWithDirectionResult
+	| PushColorFlowControlResult
 	| DeviceErrStatus
 	| InputSts
 	| MachineStatus
-	| PipelineStatus;
+	| PipelineStatus
+	| PushColorFlowStatus;
