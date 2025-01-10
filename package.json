@@ -35,6 +35,6 @@
     "socket.io-client": "^4.7.2",
     "ts-node": "^10.9.2",
     "winston": "3",
-    "winston-daily-rotate-file": "^4.7.1"
+    "winston-daily-rotate-file": "^5.0.0"
   }
 }
