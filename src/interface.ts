@@ -22,6 +22,7 @@ export enum ProtocolId {
 	PROTOCOL_ID_CMD_CHANGE_COLOR_VOLUME_ALL = 0x18,
 	PROTOCOL_ID_CMD_PUSH_COLOR_COMMAND_W_DIRECTION = 0x19,
 	PROTOCOL_ID_CMD_PUSH_COLOR_FLOW_CONTROL = 0x60,
+	PROTOCOL_ID_CMD_PUSH_COLOR_FLOW_DUAL_CONTROL = 0x61,
 
 	PROTOCOL_ID_CMD_MAX,
 
@@ -156,6 +157,19 @@ export type PushColorFlowControlResult = BaseResultInterface & {
 	command: PushColorFlowCommand;
 };
 
+export enum PushColorFlowDualCommand {
+	PUSH_COLOR_FLOW_DUAL_COMMAND_START = 0x00,
+	PUSH_COLOR_FLOW_DUAL_COMMAND_STOP = 0x01,
+}
+
+export type PushColorFlowDualControl = BaseInterface & {
+	command: PushColorFlowDualCommand;
+	numberOfRepeat: number;
+};
+export type PushColorFlowDualControlResult = BaseResultInterface & {
+	command: PushColorFlowDualCommand;
+};
+
 export enum MixColorCommandEnum {
 	MIX_COLOR_COMMAND_START = 0x00,
 	MIX_COLOR_COMMAND_STOP = 0x01,
@@ -265,7 +279,8 @@ export type Request =
 	| GetExpireTime
 	| ChangeColorVolumeAll
 	| PushColorWithDirection
-	| PushColorFlowControl;
+	| PushColorFlowControl
+	| PushColorFlowDualControl;
 
 export type Response =
 	| RequestVersionResult
@@ -284,6 +299,7 @@ export type Response =
 	| GetExpireTimeResult
 	| PushColorWithDirectionResult
 	| PushColorFlowControlResult
+	| PushColorFlowDualControlResult
 	| DeviceErrStatus
 	| InputSts
 	| MachineStatus

@@ -36,8 +36,10 @@ import {
 	Reset,
 	ChangeColorVolumeAll,
 	ChangeColorVolumeAllResult,
+	PushColorFlowDualControl,
+	PushColorFlowDualControlResult,
 } from "./interface";
-import { Observable } from "rxjs";
+import { Observable, TimeoutError } from "rxjs";
 
 export interface DeviceInterface {
 	start(): Promise<void>;
@@ -67,6 +69,9 @@ export interface DeviceInterface {
 	pushColorFlowControl(
 		payload: PushColorFlowControl
 	): Promise<PushColorFlowControlResult>;
+	pushColorFlowDualControl(
+		payload: PushColorFlowDualControl
+	): Promise<PushColorFlowDualControlResult>;
 	mixColor(payload: MixColor): Promise<MixColorResult>;
 	controlDoor(payload: ControlDoor): Promise<ControlDoorResult>;
 	setExpireTime(payload: SetExpireTime): Promise<SetExpireTimeResult>;

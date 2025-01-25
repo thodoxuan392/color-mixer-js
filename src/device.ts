@@ -1,4 +1,14 @@
-import { filter, firstValueFrom, Observable, Subject } from "rxjs";
+import {
+	catchError,
+	filter,
+	firstValueFrom,
+	Observable,
+	Subject,
+	takeUntil,
+	throwError,
+	timeout,
+	timer,
+} from "rxjs";
 import { DeviceInterface } from "./device.interface";
 import {
 	BaseInterface,
@@ -49,6 +59,8 @@ import {
 	ResetResult,
 	ChangeColorVolumeAll,
 	ChangeColorVolumeAllResult,
+	PushColorFlowDualControl,
+	PushColorFlowDualControlResult,
 } from "./interface";
 import { SerialPort } from "serialport";
 import {
@@ -64,6 +76,8 @@ export enum USB_PRODUCT_ID {
 	FT232 = "6001",
 	SERIAL = "7523",
 }
+
+const DEFAULT_TIMEOUT_COMMAND_MS = 1000;
 
 export class Device implements DeviceInterface {
 	private _timerToCheckDevicePort: NodeJS.Timer;
@@ -143,7 +157,10 @@ export class Device implements DeviceInterface {
 				filter(
 					(response) =>
 						response.protocolId === ProtocolId.PROTOCOL_ID_CMD_RESET
-				)
+				),
+				timeout({
+					first: DEFAULT_TIMEOUT_COMMAND_MS,
+				})
 			)
 		)) as ResetResult;
 	}
@@ -168,7 +185,10 @@ export class Device implements DeviceInterface {
 					(response) =>
 						response.protocolId ===
 						ProtocolId.PROTOCOL_ID_CMD_REQUEST_VERSION
-				)
+				),
+				timeout({
+					first: DEFAULT_TIMEOUT_COMMAND_MS,
+				})
 			)
 		)) as RequestVersionResult;
 	}
@@ -192,7 +212,10 @@ export class Device implements DeviceInterface {
 					(response) =>
 						response.protocolId ===
 						ProtocolId.PROTOCOL_ID_CMD_GET_SETTING
-				)
+				),
+				timeout({
+					first: DEFAULT_TIMEOUT_COMMAND_MS,
+				})
 			)
 		)) as GetSettingResult;
 	}
@@ -238,7 +261,10 @@ export class Device implements DeviceInterface {
 					(response) =>
 						response.protocolId ===
 						ProtocolId.PROTOCOL_ID_CMD_UPDATE_SETTING
-				)
+				),
+				timeout({
+					first: DEFAULT_TIMEOUT_COMMAND_MS,
+				})
 			)
 		)) as UpdateSettingResult;
 	}
@@ -261,7 +287,10 @@ export class Device implements DeviceInterface {
 				filter(
 					(response) =>
 						response.protocolId === ProtocolId.PROTOCOL_ID_CMD_PING
-				)
+				),
+				timeout({
+					first: DEFAULT_TIMEOUT_COMMAND_MS,
+				})
 			)
 		)) as PingResult;
 	}
@@ -294,7 +323,10 @@ export class Device implements DeviceInterface {
 					(response) =>
 						response.protocolId ===
 						ProtocolId.PROTOCOL_ID_CMD_UPDATE_SERIAL_NUMBER
-				)
+				),
+				timeout({
+					first: DEFAULT_TIMEOUT_COMMAND_MS,
+				})
 			)
 		)) as PingResult;
 	}
@@ -326,7 +358,10 @@ export class Device implements DeviceInterface {
 					(response) =>
 						response.protocolId ===
 						ProtocolId.PROTOCOL_ID_CMD_SYNC_TIME
-				)
+				),
+				timeout({
+					first: DEFAULT_TIMEOUT_COMMAND_MS,
+				})
 			)
 		)) as SyncTimeResult;
 	}
@@ -350,7 +385,10 @@ export class Device implements DeviceInterface {
 					(response) =>
 						response.protocolId ===
 						ProtocolId.PROTOCOL_ID_CMD_GET_REAL_TIME
-				)
+				),
+				timeout({
+					first: DEFAULT_TIMEOUT_COMMAND_MS,
+				})
 			)
 		)) as GetRealTimeResult;
 	}
@@ -376,7 +414,10 @@ export class Device implements DeviceInterface {
 					(response) =>
 						response.protocolId ===
 						ProtocolId.PROTOCOL_ID_CMD_RESET_DEFAULT_SETTING
-				)
+				),
+				timeout({
+					first: DEFAULT_TIMEOUT_COMMAND_MS,
+				})
 			)
 		)) as ResetDefaultSettingResult;
 	}
@@ -408,7 +449,10 @@ export class Device implements DeviceInterface {
 					(response) =>
 						response.protocolId ===
 						ProtocolId.PROTOCOL_ID_CMD_CHANGE_COLOR_VOLUME
-				)
+				),
+				timeout({
+					first: DEFAULT_TIMEOUT_COMMAND_MS,
+				})
 			)
 		)) as ChangeColorVolumeResult;
 	}
@@ -439,7 +483,10 @@ export class Device implements DeviceInterface {
 					(response) =>
 						response.protocolId ===
 						ProtocolId.PROTOCOL_ID_CMD_CHANGE_COLOR_VOLUME_ALL
-				)
+				),
+				timeout({
+					first: DEFAULT_TIMEOUT_COMMAND_MS,
+				})
 			)
 		)) as ChangeColorVolumeAllResult;
 	}
@@ -464,7 +511,10 @@ export class Device implements DeviceInterface {
 					(response) =>
 						response.protocolId ===
 						ProtocolId.PROTOCOL_ID_CMD_PUSH_COLOR_COMMAND
-				)
+				),
+				timeout({
+					first: DEFAULT_TIMEOUT_COMMAND_MS,
+				})
 			)
 		)) as PushColorResult;
 	}
@@ -489,7 +539,10 @@ export class Device implements DeviceInterface {
 					(response) =>
 						response.protocolId ===
 						ProtocolId.PROTOCOL_ID_CMD_MIX_COLOR_COMMAND
-				)
+				),
+				timeout({
+					first: DEFAULT_TIMEOUT_COMMAND_MS,
+				})
 			)
 		)) as MixColorResult;
 	}
@@ -514,7 +567,10 @@ export class Device implements DeviceInterface {
 					(response) =>
 						response.protocolId ===
 						ProtocolId.PROTOCOL_ID_CMD_DOOR_CONTROL
-				)
+				),
+				timeout({
+					first: DEFAULT_TIMEOUT_COMMAND_MS,
+				})
 			)
 		)) as ControlDoorResult;
 	}
@@ -557,7 +613,10 @@ export class Device implements DeviceInterface {
 					(response) =>
 						response.protocolId ===
 						ProtocolId.PROTOCOL_ID_CMD_SET_EXPIRE_TIME
-				)
+				),
+				timeout({
+					first: DEFAULT_TIMEOUT_COMMAND_MS,
+				})
 			)
 		)) as SetExpireTimeResult;
 	}
@@ -583,7 +642,10 @@ export class Device implements DeviceInterface {
 					(response) =>
 						response.protocolId ===
 						ProtocolId.PROTOCOL_ID_CMD_GET_EXPIRE_TIME
-				)
+				),
+				timeout({
+					first: DEFAULT_TIMEOUT_COMMAND_MS,
+				})
 			)
 		)) as GetExpireTimeResult;
 	}
@@ -612,7 +674,10 @@ export class Device implements DeviceInterface {
 					(response) =>
 						response.protocolId ===
 						ProtocolId.PROTOCOL_ID_CMD_PUSH_COLOR_COMMAND_W_DIRECTION
-				)
+				),
+				timeout({
+					first: DEFAULT_TIMEOUT_COMMAND_MS,
+				})
 			)
 		)) as PushColorWithDirectionResult;
 	}
@@ -640,9 +705,43 @@ export class Device implements DeviceInterface {
 					(response) =>
 						response.protocolId ===
 						ProtocolId.PROTOCOL_ID_CMD_PUSH_COLOR_FLOW_CONTROL
-				)
+				),
+				timeout({
+					first: DEFAULT_TIMEOUT_COMMAND_MS,
+				})
 			)
 		)) as PushColorFlowControlResult;
+	}
+
+	public async pushColorFlowDualControl(
+		payload: PushColorFlowDualControl
+	): Promise<PushColorFlowDualControlResult> {
+		const data = [];
+		data.push(START_BYTE);
+		data.push(payload.protocolId);
+		data.push(2);
+		data.push(payload.command);
+		data.push(payload.numberOfRepeat);
+		const checksum = calculateChecksum(data.slice(3, data.length));
+		data.push(checksum >> 8);
+		data.push(checksum & 0xff);
+		data.push(STOP_BYTE);
+		this._logger.info(data);
+		if (this._port?.open) {
+			this._port.write(Buffer.from(data));
+		}
+		return (await firstValueFrom(
+			this._subject.pipe(
+				filter(
+					(response) =>
+						response.protocolId ===
+						ProtocolId.PROTOCOL_ID_CMD_PUSH_COLOR_FLOW_DUAL_CONTROL
+				),
+				timeout({
+					first: DEFAULT_TIMEOUT_COMMAND_MS,
+				})
+			)
+		)) as PushColorFlowDualControlResult;
 	}
 
 	getObservable(): Observable<Response> {
@@ -923,6 +1022,19 @@ export class Device implements DeviceInterface {
 				};
 				cutLen = 5 + 3; // 2 for checksum , 1 for stop byte
 				this.sendBack(pushColorFlControlResult);
+				break;
+			}
+			case ProtocolId.PROTOCOL_ID_CMD_PUSH_COLOR_FLOW_DUAL_CONTROL: {
+				const result = buffer.at(startByteIndex + 3);
+				const command = buffer.at(startByteIndex + 4);
+				const pushColorFlDualControlResult: PushColorFlowDualControlResult =
+					{
+						protocolId,
+						result,
+						command,
+					};
+				cutLen = 5 + 3; // 2 for checksum , 1 for stop byte
+				this.sendBack(pushColorFlDualControlResult);
 				break;
 			}
 			case ProtocolId.PROTOCOL_ID_STS_DEVICE_ERR: {

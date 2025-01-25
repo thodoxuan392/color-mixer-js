@@ -10,6 +10,7 @@ import {
 	ProtocolId,
 	PushColorCommandEnum,
 	PushColorFlowCommand,
+	PushColorFlowDualCommand,
 	Request,
 	Response,
 	SyncTime,
@@ -17,7 +18,7 @@ import {
 	UpdateSetting,
 } from "./interface";
 import { Logger } from "./logger";
-import { Observable, Subscription } from "rxjs";
+import { Observable, Subscription, TimeoutError } from "rxjs";
 import { generateRandomNumberArray } from "./utils";
 
 let observable: Observable<Response>;
@@ -150,11 +151,11 @@ const commandDescriptorTable: CommandDescriptor[] = [
 		description: "Change color volume from Controller Box",
 		callbackFunction: async (payload) => {
 			let response: Response;
-			for (let index = 1; index <= 16; index++) {
+			for (let index = 2; index <= 16; index++) {
 				response = await device.changeColorVolume({
 					protocolId: ProtocolId.PROTOCOL_ID_CMD_CHANGE_COLOR_VOLUME,
-					pipeLineId: index,
-					volume: 2000,
+					pipeLineId: 2,
+					volume: 1,
 				});
 				logger.info(
 					`Change color volume got result ${JSON.stringify(response)}`
@@ -319,7 +320,7 @@ const commandDescriptorTable: CommandDescriptor[] = [
 		payload: {
 			protocolId: ProtocolId.PROTOCOL_ID_CMD_PUSH_COLOR_FLOW_CONTROL,
 			command: PushColorFlowCommand.PUSH_COLOR_FLOW_COMMAND_START,
-			direction: 0,
+			direction: 1,
 		},
 	},
 	{
@@ -330,6 +331,27 @@ const commandDescriptorTable: CommandDescriptor[] = [
 			protocolId: ProtocolId.PROTOCOL_ID_CMD_PUSH_COLOR_FLOW_CONTROL,
 			command: PushColorFlowCommand.PUSH_COLOR_FLOW_COMMAND_STOP,
 			direction: 0,
+		},
+	},
+	{
+		command: "push-color-fl-dual-start",
+		description: "Start push color dual direction flow",
+		callbackFunction: device.pushColorFlowDualControl.bind(device),
+		payload: {
+			protocolId: ProtocolId.PROTOCOL_ID_CMD_PUSH_COLOR_FLOW_DUAL_CONTROL,
+			command:
+				PushColorFlowDualCommand.PUSH_COLOR_FLOW_DUAL_COMMAND_START,
+			numberOfRepeat: 0,
+		},
+	},
+	{
+		command: "push-color-fl-dual-stop",
+		description: "Stop push color dual direction flow",
+		callbackFunction: device.pushColorFlowDualControl.bind(device),
+		payload: {
+			protocolId: ProtocolId.PROTOCOL_ID_CMD_PUSH_COLOR_FLOW_DUAL_CONTROL,
+			command: PushColorFlowDualCommand.PUSH_COLOR_FLOW_DUAL_COMMAND_STOP,
+			numberOfRepeat: 0,
 		},
 	},
 ];
@@ -351,10 +373,16 @@ commandDescriptorTable.forEach((commandDescriptor) => {
 					`Executing command got result ${JSON.stringify(result)}`
 				);
 			} catch (e) {
-				logger.error(
-					`Executing command ${commandDescriptor.command} failed`,
-					e
-				);
+				if (e instanceof TimeoutError) {
+					logger.error(
+						`Executing command "${commandDescriptor.command}" timed out`
+					);
+				} else {
+					logger.error(
+						`Executing command "${commandDescriptor.command}" failed`,
+						e
+					);
+				}
 			}
 		});
 });
